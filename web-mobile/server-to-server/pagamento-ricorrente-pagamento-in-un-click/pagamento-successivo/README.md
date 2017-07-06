@@ -1,0 +1,2 @@
+# Pagamento successivo
+Quando devi provvedere all’addebito su un contratto, precedentemente registrato con il primo pagamento o verifica carta 3D-Secure o SSL, il tuo sistema deve inviare una chiamata alle API di CartaSi con i dati del contratto.
