@@ -1,5 +1,5 @@
 # Integrare CartaSi in ambiente Web & Mobile
-Hai a disposizione quattro modalità per integrare il pos virtuale CartaSi:
+Hai a disposizione quattro modalità per integrare il gateway X-Pay di CartaSi:
 
 ## 1. [Pagamento semplice](/web-mobile/pagamento-semplice/)
 Il cliente resta sull’e-commerce dell’esercente fino al momento del checkout. Viene poi reindirizzato in ambiente sicuro CartaSi per effettuare il pagamento.
