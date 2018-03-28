@@ -12,11 +12,11 @@ import requests
 import json
 
 # URL + URI
-requestUrl = "https://int-ecommerce.cartasi.it/" + "ecomm/api/bo/reportOrdini";
+requestUrl = "https://int-ecommerce.nexi.it/" + "ecomm/api/bo/reportOrdini";
 
 # Parametri per calcolo MAC
-apiKey = "<ALIAS>" # Alias fornito da CartaSi
-chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>" # Chiave segreta fornita da CartaSi
+apiKey = "<ALIAS>" # Alias fornito da Nexi
+chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>" # Chiave segreta fornita da Nexi
 codTrans = "<CODICE TRANSAZIONE>" # Vuoto per tutte le transazioni altrimenti cerca la transazione inserita
 periodo = "01/01/2017 - 31/12/2017" # gg/mm/aaaa - gg/mm/aaaa 
 canale = "All" # All | MySi | MyBank | CartaCredito | PayPal

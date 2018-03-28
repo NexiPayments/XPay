@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Security.Cryptography;
@@ -13,11 +13,11 @@ namespace XPay
         {
 
             // URL + URI
-            string requestUrl = "https://int-ecommerce.cartasi.it/" + "ecomm/api/bo/richiestaPayMail";
+            string requestUrl = "https://int-ecommerce.nexi.it/" + "ecomm/api/bo/richiestaPayMail";
 
             // Parametri per calcolo MAC
-            string apiKey = "<ALIAS>"; // Alias fornito da CartaSi
-            string chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Chiave segreta fornita da CartaSi
+            string apiKey = "<ALIAS>"; // Alias fornito da Nexi
+            string chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Chiave segreta fornita da Nexi
             string codTrans = "<CODICE TRANSAZIONE>"; // Codice della transazione
             string timeout = 2; // Durata in ore del link di pagamento che verrà generato 
             string importo = 5000; // 5000 = 50,00 EURO (indicare la cifra in centesimi)

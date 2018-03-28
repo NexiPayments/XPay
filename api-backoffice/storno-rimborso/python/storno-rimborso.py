@@ -12,11 +12,11 @@ import requests
 import json
 
 # URL + URI
-requestUrl = "https://int-ecommerce.cartasi.it/" + "ecomm/api/bo/storna";
+requestUrl = "https://int-ecommerce.nexi.it/" + "ecomm/api/bo/storna";
 
 # Parametri per calcolo MAC
-apiKey = "<ALIAS>" # Alias fornito da CartaSi
-chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>" # Chiave segreta fornita da CartaSi
+apiKey = "<ALIAS>" # Alias fornito da Nexi
+chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>" # Chiave segreta fornita da Nexi
 codTrans = "33jd7sjdsai9" # Codice della transazione da incassare 
 importo = "5000" # 5000 = 50,00 EURO (indicare la cifra in centesimi)
 divisa = "978" # divisa 978 indica EUR

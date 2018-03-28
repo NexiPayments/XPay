@@ -4,12 +4,12 @@ $connection = curl_init();
 
 if ($connection) {
     
-    $requestURL = "https://int-ecommerce.cartasi.it/"; // URL
+    $requestURL = "https://int-ecommerce.nexi.it/"; // URL
     $requestURI = "ecomm/api/bo/reportOrdini"; // URI
     
     // Parametri per calcolo MAC
-    $apiKey = "<ALIAS>"; // Alias fornito da CartaSi
-    $chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Chiave segreta fornita da CartaSi
+    $apiKey = "<ALIAS>"; // Alias fornito da Nexi
+    $chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Chiave segreta fornita da Nexi
     $codiceTransazione = ""; // Vuoto per tutte le transazioni altrimenti cerca la transazione inserita
     $periodo = "01/01/2017 - 31/12/2017"; // gg/mm/aaaa - gg/mm/aaaa 
     $canale = "All"; // All || MySi || MyBank || CartaCredito || PayPal

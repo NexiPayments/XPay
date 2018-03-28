@@ -1,8 +1,8 @@
 <?php
 
 // apiKey e chiave segreta
-$apiKey = "<ALIAS>"; // Sostituire con il valore fornito da CartaSi
-$chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Sostituire con il valore fornito da CartaSi
+$apiKey = "<ALIAS>"; // Sostituire con il valore fornito da Nexi
+$chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Sostituire con il valore fornito da Nexi
 
 if ($_REQUEST['esito'] != "OK") {
     echo "Esito 3D-Secure:" . $_REQUEST['esito'] . "-" . $_REQUEST['messaggio'];
@@ -34,9 +34,9 @@ if ($macCalculated != $_REQUEST['mac']) {
 
 // Dopo i controlli eseguo la prova di pagamento
 
-$requestUrl = "https://int-ecommerce.cartasi.it/ecomm/api/recurring/verificaCarta3DS";
+$requestUrl = "https://int-ecommerce.nexi.it/ecomm/api/recurring/verificaCarta3DS";
 
-$xpayNonce = $_REQUEST['xpayNonce']; // Nonce generato da CartaSi da utilizzare per eseguire il pagamento
+$xpayNonce = $_REQUEST['xpayNonce']; // Nonce generato da Nexi da utilizzare per eseguire il pagamento
 $timeStamp = (time()) * 1000;
 
 // Calcolo MAC

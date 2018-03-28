@@ -16,12 +16,12 @@ public class eliminazioneCFPan {
         Date date = new Date();
 
         // URL + URI
-        String requestUrl = "https://int-ecommerce.cartasi.it/" + "ecomm/api/cfpan/rimuovi";
+        String requestUrl = "https://int-ecommerce.nexi.it/" + "ecomm/api/cfpan/rimuovi";
 
         // Parametri per calcolo MAC
-        String apiKey = "<ALIAS>"; // Alias fornito da CartaSi
-        String chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Chiave segreta fornita da CartaSi
-        String codiceGruppo = "<CODICE_GRUPPO>"; // Codice gruppo fornito da CartaSi
+        String apiKey = "<ALIAS>"; // Alias fornito da Nexi
+        String chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Chiave segreta fornita da Nexi
+        String codiceGruppo = "<CODICE_GRUPPO>"; // Codice gruppo fornito da Nexi
         String codiceFiscale = "<CODICE_FISCALE>"; // Codice fiscale
         String hashPan = "<PAN>"; // Pan della carta
         String timeStamp = "" + System.currentTimeMillis();

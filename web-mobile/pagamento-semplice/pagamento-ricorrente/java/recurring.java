@@ -16,13 +16,13 @@ public class recurring {
   public static void main(String[] a) throws Exception {
 
     // apiKey e chiave segreta
-    String APIKEY = "<ALIAS>"; // Sostituire con il valore fornito da CartaSi
-    String CHIAVESEGRETA = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Sostituire con il valore fornito da CartaSi
+    String APIKEY = "<ALIAS>"; // Sostituire con il valore fornito da Nexi
+    String CHIAVESEGRETA = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Sostituire con il valore fornito da Nexi
 
     SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
     Date date = new Date();
 
-    String requestUrl = "https://int-ecommerce.cartasi.it/ecomm/api/recurring/pagamentoRicorrente";
+    String requestUrl = "https://int-ecommerce.nexi.it/ecomm/api/recurring/pagamentoRicorrente";
 
     // Parametri della richiesta
     String numContratto = "TESTPS_" + dateFormat.format(date);

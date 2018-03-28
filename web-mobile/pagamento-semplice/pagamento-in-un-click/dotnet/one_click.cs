@@ -11,10 +11,10 @@ namespace XPay
         {
 
             // Alias e chiave segreta
-            string ALIAS = "<ALIAS>"; // Sostituire con il valore fornito da CartaSi
-            string CHIAVESEGRETA = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Sostituire con il valore fornito da CartaSi
+            string ALIAS = "<ALIAS>"; // Sostituire con il valore fornito da Nexi
+            string CHIAVESEGRETA = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Sostituire con il valore fornito da Nexi
 
-            string requestUrl = "https://int-ecommerce.cartasi.it/ecomm/ecomm/DispatcherServlet";
+            string requestUrl = "https://int-ecommerce.nexi.it/ecomm/ecomm/DispatcherServlet";
             string merchantServerUrl = "https://my-server.example.tdl/";
 
             DateTime data = DateTime.Now;

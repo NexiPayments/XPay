@@ -12,11 +12,11 @@ import requests
 import json
 
 # URL + URI
-requestUrl = "https://int-ecommerce.cartasi.it/" + "ecomm/api/contratti/abilitaContratto";
+requestUrl = "https://int-ecommerce.nexi.it/" + "ecomm/api/contratti/abilitaContratto";
 
 # Parametri per calcolo MAC
-apiKey = "<ALIAS>" # Alias fornito da CartaSi
-chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>" # Chiave segreta fornita da CartaSi
+apiKey = "<ALIAS>" # Alias fornito da Nexi
+chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>" # Chiave segreta fornita da Nexi
 numeroContratto = "scf23sc" # Numero del contratto da abilitare
 timeStamp = (int(time.time())) * 1000
 

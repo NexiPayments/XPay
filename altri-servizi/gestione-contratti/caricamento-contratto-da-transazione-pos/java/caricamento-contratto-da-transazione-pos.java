@@ -16,11 +16,11 @@ public class caricamentoContrattoDaTransazionePOS {
         Date date = new Date();
 
         // URL + URI
-        String requestUrl = "https://int-ecommerce.cartasi.it/" + "ecomm/api/contratti/creazioneDaPosFisico";
+        String requestUrl = "https://int-ecommerce.nexi.it/" + "ecomm/api/contratti/creazioneDaPosFisico";
 
         // Parametri per calcolo MAC
-        String apiKey = "<ALIAS>"; // Alias fornito da CartaSi
-        String chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Chiave segreta fornita da CartaSi
+        String apiKey = "<ALIAS>"; // Alias fornito da Nexi
+        String chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Chiave segreta fornita da Nexi
         String numeroContratto = "3dsa3asc34a"; // Numero del contratto da abilitare
         String idPOSFisico = "<ID>"; // ID del POS fisico
         String codiceAutorizzazione = "<CODICE_AUTORIZZAZIONE>"; // Codice dia autorizzazione della transazione

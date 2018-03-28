@@ -16,11 +16,11 @@ public class controlloEsistenza {
         Date date = new Date();
 
         // URL + URI
-        String requestUrl = "https://int-ecommerce.cartasi.it/" + "ecomm/api/cfpan/controllaEsistenza";
+        String requestUrl = "https://int-ecommerce.nexi.it/" + "ecomm/api/cfpan/controllaEsistenza";
 
         // Parametri per calcolo MAC
-        String apiKey = "<ALIAS>"; // Alias fornito da CartaSi
-        String chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Chiave segreta fornita da CartaSi
+        String apiKey = "<ALIAS>"; // Alias fornito da Nexi
+        String chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Chiave segreta fornita da Nexi
         String valore = "<valore>"; // Numero contratto oppure codice fiscale
         String tipo = "CodiceContratto"; // "CodiceContratto" oppure "CodiceFiscale"
         String timeStamp = "" + System.currentTimeMillis();

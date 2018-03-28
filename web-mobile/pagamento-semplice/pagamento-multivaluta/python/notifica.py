@@ -19,7 +19,7 @@ param_from_request = {
 }
 
 # Chiave segreta
-CHIAVESEGRETA = "<CHIAVE SEGRETA PER CALCOLO MAC>"; # Sostituire con il valore fornito da CartaSi
+CHIAVESEGRETA = "<CHIAVE SEGRETA PER CALCOLO MAC>"; # Sostituire con il valore fornito da Nexi
 
 # Controllo che ci siano tutti i parametri obbligatori di ritorno
 requiredParams = ['codTrans', 'esito', 'importo', 'divisa', 'data', 'orario', 'codAut', 'mac']

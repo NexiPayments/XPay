@@ -1,6 +1,6 @@
 # Hosted fields
 
-Hai a disposizione questa modalità per integrare X-Pay di CartaSi permettendo una completa personalizzazione dell’esperienza di pagamento, con un limitato impatto sui requisiti PCI DSS.
+Hai a disposizione questa modalità per integrare XPay di Nexi permettendo una completa personalizzazione dell’esperienza di pagamento, con un limitato impatto sui requisiti PCI DSS.
 
 ## Come funziona?
 Si descrivono di seguito l’architettura e il processo di pagamento che prevede l’utilizzo di un client SDK Javascript.

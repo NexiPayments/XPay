@@ -10,12 +10,12 @@ import datetime
 HTTP_HOST = "my-server.example.tdl"
 session_id = "12345"
 
-requestUrl = "https://int-ecommerce.cartasi.it/ecomm/ecomm/DispatcherServlet"
+requestUrl = "https://int-ecommerce.nexi.it/ecomm/ecomm/DispatcherServlet"
 merchantServerUrl = "https://" + HTTP_HOST + "/xpay/pagamento_semplice_python/codice_base/"
 
 # Alias e chiave segreta
-ALIAS = "<ALIAS>" # Sostituire con il valore fornito da CartaSi
-CHIAVESEGRETA = "<CHIAVE SEGRETA PER CALCOLO MAC>" # Sostituire con il valore fornito da CartaSi
+ALIAS = "<ALIAS>" # Sostituire con il valore fornito da Nexi
+CHIAVESEGRETA = "<CHIAVE SEGRETA PER CALCOLO MAC>" # Sostituire con il valore fornito da Nexi
 
 # Parametri per calcolo MAC
 codTrans = "TESTPS_" + datetime.datetime.today().strftime('%Y%m%d%H%M%s')

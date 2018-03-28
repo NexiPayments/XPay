@@ -16,11 +16,11 @@ public class dettagliContratto {
         Date date = new Date();
 
         // URL + URI
-        String requestUrl = "https://int-ecommerce.cartasi.it/" + "ecomm/api/contratti/dettagliContratto";
+        String requestUrl = "https://int-ecommerce.nexi.it/" + "ecomm/api/contratti/dettagliContratto";
 
         // Parametri per calcolo MAC
-        String apiKey = "<ALIAS>"; // Alias fornito da CartaSi
-        String chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Chiave segreta fornita da CartaSi
+        String apiKey = "<ALIAS>"; // Alias fornito da Nexi
+        String chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Chiave segreta fornita da Nexi
         String numeroContratto = "3dsa3asc34a"; // Numero del contratto da cercare
         String codiceFiscale = ""; //vuoto per elencarli tutti
         String dataRegistrazioneDa = "00/00/0000 00:00:00"; // formato gg/mm/aaaa hh/mm/ss (giorno/mese/anno ora:minuti:secondi)

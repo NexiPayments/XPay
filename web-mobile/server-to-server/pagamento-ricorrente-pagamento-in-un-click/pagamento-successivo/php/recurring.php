@@ -1,10 +1,10 @@
 <?php
 
 // apiKey e chiave segreta
-$apiKey = "<ALIAS>"; // Sostituire con il valore fornito da CartaSi
-$chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Sostituire con il valore fornito da CartaSi
+$apiKey = "<ALIAS>"; // Sostituire con il valore fornito da Nexi
+$chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Sostituire con il valore fornito da Nexi
 
-$requestUrl = "https://int-ecommerce.cartasi.it/ecomm/api/recurring/pagamentoRicorrente";
+$requestUrl = "https://int-ecommerce.nexi.it/ecomm/api/recurring/pagamentoRicorrente";
 
 // Parametri della richiesta
 $numContratto = $_REQUEST['numContratto'];

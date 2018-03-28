@@ -1,10 +1,10 @@
 <?php
 
 // Alias e chiave segreta
-$ALIAS = "<ALIAS>"; // Sostituire con il valore fornito da CartaSi
-$CHIAVESEGRETA = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Sostituire con il valore fornito da CartaSi
+$ALIAS = "<ALIAS>"; // Sostituire con il valore fornito da Nexi
+$CHIAVESEGRETA = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Sostituire con il valore fornito da Nexi
 
-$requestUrl = "https://int-ecommerce.cartasi.it/ecomm/ecomm/DispatcherServlet";
+$requestUrl = "https://int-ecommerce.nexi.it/ecomm/ecomm/DispatcherServlet";
 $merchantServerUrl = "https://" . $_SERVER['HTTP_HOST'] . "/xpay/php/pagamento_semplice/recurring/";
 
 $codTrans = "TESTPS_" . date('YmdHis');

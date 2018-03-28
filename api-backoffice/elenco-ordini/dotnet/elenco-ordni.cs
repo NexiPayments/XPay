@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Security.Cryptography;
@@ -13,11 +13,11 @@ namespace XPay
         {
 
             // URL + URI
-            string requestUrl = "https://int-ecommerce.cartasi.it/" + "ecomm/api/bo/reportOrdini";
+            string requestUrl = "https://int-ecommerce.nexi.it/" + "ecomm/api/bo/reportOrdini";
 
             // Parametri per calcolo MAC
-            string apiKey = "<ALIAS>"; // Alias fornito da CartaSi
-            string chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Chiave segreta fornita da CartaSi
+            string apiKey = "<ALIAS>"; // Alias fornito da Nexi
+            string chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Chiave segreta fornita da Nexi
             string codTrans = "<CODICE TRANSAZIONE>"; // Vuoto per tutte le transazioni altrimenti cerca la transazione inserita
             string periodo = "gg/mm/aaaa - gg/mm/aaaa"; // gg/mm/aaaa - gg/mm/aaaa 
             string canale = "All"; // All || MySi || MyBank || CartaCredito || PayPal

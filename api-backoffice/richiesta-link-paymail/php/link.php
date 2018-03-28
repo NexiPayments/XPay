@@ -4,12 +4,12 @@ $connection = curl_init();
 
 if ($connection) {
 
-    $requestURL = "https://int-ecommerce.cartasi.it/"; // URL
+    $requestURL = "https://int-ecommerce.nexi.it/"; // URL
     $requestURI = "ecomm/api/bo/richiestaPayMail"; // URI
     
     // Parametri per calcolo MAC
-    $apiKey = "<ALIAS>"; // Alias fornito da CartaSi
-    $chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Chiave segreta fornita da CartaSi
+    $apiKey = "<ALIAS>"; // Alias fornito da Nexi
+    $chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Chiave segreta fornita da Nexi
     $codiceTransazione = "APIBO_" . date('YmdHis'); // Codice della transazione
     $importo = 5000; // 5000 = 50,00 EURO (indicare la cifra in centesimi)
     $timeout = 4; // Durata in ore del link di pagamento che verrà generato 

@@ -16,11 +16,11 @@ public class dettaglioOrdine {
         Date date = new Date();
 
         // URL + URI
-        String requestUrl = "https://int-ecommerce.cartasi.it/" + "ecomm/api/bo/situazioneOrdine";
+        String requestUrl = "https://int-ecommerce.nexi.it/" + "ecomm/api/bo/situazioneOrdine";
 
         // Parametri per calcolo MAC
-        String apiKey = "<ALIAS>"; // Alias fornito da CartaSi
-        String chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Chiave segreta fornita da CartaSi
+        String apiKey = "<ALIAS>"; // Alias fornito da Nexi
+        String chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Chiave segreta fornita da Nexi
         String codTrans = "4bnrgtj34b"; // Codice della transazione di cui si cercano i dettagli
         String timeStamp = "" + System.currentTimeMillis();        
 		

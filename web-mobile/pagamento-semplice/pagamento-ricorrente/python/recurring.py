@@ -9,11 +9,11 @@ import datetime
 import time
 import requests
 
-requestUrl = "https://int-ecommerce.cartasi.it/ecomm/api/recurring/pagamentoRicorrente";
+requestUrl = "https://int-ecommerce.nexi.it/ecomm/api/recurring/pagamentoRicorrente";
 
 # Alias e chiave segreta
-APIKEY = "<ALIAS>" # Sostituire con il valore fornito da CartaSi
-CHIAVESEGRETA = "<CHIAVE SEGRETA PER CALCOLO MAC>" # Sostituire con il valore fornito da CartaSi
+APIKEY = "<ALIAS>" # Sostituire con il valore fornito da Nexi
+CHIAVESEGRETA = "<CHIAVE SEGRETA PER CALCOLO MAC>" # Sostituire con il valore fornito da Nexi
 
 # Parametri della richiesta
 numContratto = "TESTPS_" + datetime.datetime.today().strftime('%Y%m%d%H%M%s')

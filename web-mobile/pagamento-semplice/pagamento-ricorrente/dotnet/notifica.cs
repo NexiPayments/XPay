@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Security.Cryptography;
@@ -10,7 +10,7 @@ namespace XPay
         static void Main(string[] args)
         {
             // Chiave segreta
-            string chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Sostituire con il valore fornito da CartaSi
+            string chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Sostituire con il valore fornito da Nexi
 
             // Calcolo MAC
             SampleXPayRequest sampleXPay = new SampleXPayRequest();

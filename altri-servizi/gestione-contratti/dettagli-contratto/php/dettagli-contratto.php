@@ -4,12 +4,12 @@ $connection = curl_init();
 
 if ($connection) {
 
-    $requestURL = "https://int-ecommerce.cartasi.it/"; // URL
+    $requestURL = "https://int-ecommerce.nexi.it/"; // URL
     $requestURI = "ecomm/api/contratti/dettagliContratto"; // URI
     
     // Parametri calcolo MAC
-    $apiKey = "<ALIAS>"; // Alias fornito da CartaSi
-    $chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Chiave segreta fornita da CartaSi
+    $apiKey = "<ALIAS>"; // Alias fornito da Nexi
+    $chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Chiave segreta fornita da Nexi
     $numeroContratto = 'scf23fc23'; // Numero del contratto da cercare
     $dataRegistrazioneDa = "00/00/0000 00:00:00"; // formato gg/mm/aaaa hh/mm/ss (giorno/mese/anno ora:minuti:secondi)
     $dataRegistrazioneA = "00/00/0000 00:00:00"; // formato gg/mm/aaaa hh/mm/ss  (giorno/mese/anno ora:minuti:secondi)

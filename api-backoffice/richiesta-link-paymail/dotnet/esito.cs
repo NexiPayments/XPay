@@ -11,7 +11,7 @@ namespace XPay
         {
 
             // chiave segreta
-            string CHIAVESEGRETA = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Sostituire con il valore fornito da CartaSi
+            string CHIAVESEGRETA = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Sostituire con il valore fornito da Nexi
 
             // Calcolo MAC
             string mac = HashMac(  "codTrans=" + args.codTrans +

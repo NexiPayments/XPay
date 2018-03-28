@@ -6,7 +6,7 @@ public class esito {
 
   public static void main(String[] args) throws Exception {
 
-    String CHIAVESEGRETA = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Sostituire con il valore fornito da CartaSi
+    String CHIAVESEGRETA = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Sostituire con il valore fornito da Nexi
 
     // Questi sono i parametri in ingresso della richiesta
     Map < String, String > paramFromRequest = new HashMap < String, String > ();

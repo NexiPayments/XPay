@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Security.Cryptography;
@@ -13,11 +13,11 @@ namespace XPay
         {
 
             // URL + URI
-            string requestUrl = "https://int-ecommerce.cartasi.it/" + "ecomm/api/contratti/creazioneDaPosFisico";
+            string requestUrl = "https://int-ecommerce.nexi.it/" + "ecomm/api/contratti/creazioneDaPosFisico";
 
             // Parametri per il calcolo MAC
-            string apiKey = "<ALIAS>"; // Alias fornito da CartaSi
-            string chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Chiave segreta fornita da CartaSi
+            string apiKey = "<ALIAS>"; // Alias fornito da Nexi
+            string chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Chiave segreta fornita da Nexi
             string timeStamp = (Math.Round((DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1))).TotalMilliseconds)).ToString();           
 
             string numeroContratto = "<NUMERO_CONTRATTO>"; // Numero del contratto da abilitare

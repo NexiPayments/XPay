@@ -12,11 +12,11 @@ import requests
 import json
 
 # URL + URI
-requestUrl = "https://int-ecommerce.cartasi.it/" + "ecomm/api/blacklist/rimuovi";
+requestUrl = "https://int-ecommerce.nexi.it/" + "ecomm/api/blacklist/rimuovi";
 
 # Parametri per calcolo MAC
-apiKey = "<ALIAS>" # Alias fornito da CartaSi
-chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>" # Chiave segreta fornita da CartaSi
+apiKey = "<ALIAS>" # Alias fornito da Nexi
+chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>" # Chiave segreta fornita da Nexi
 tipo = "" # "CodiceContratto" oppure "CodiceFiscale"
 valore = "" # Numero contratto oppure codice fiscale
 timeStamp = (int(time.time())) * 1000

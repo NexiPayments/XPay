@@ -10,13 +10,13 @@ public class codice_base {
   public static void main(String[] args) throws Exception {
 
     // Alias e chiave segreta
-    String ALIAS = "<ALIAS>"; // Sostituire con il valore fornito da CartaSi
-    String CHIAVESEGRETA = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Sostituire con il valore fornito da CartaSi
+    String ALIAS = "<ALIAS>"; // Sostituire con il valore fornito da Nexi
+    String CHIAVESEGRETA = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Sostituire con il valore fornito da Nexi
 
     String HTTP_HOST = "my-server.example.tdl";
     String session_id = "12345";
 
-    String requestUrl = "https://int-ecommerce.cartasi.it/ecomm/ecomm/DispatcherServlet";
+    String requestUrl = "https://int-ecommerce.nexi.it/ecomm/ecomm/DispatcherServlet";
     String merchantServerUrl = "https://" + HTTP_HOST + "/xpay/pagamento_semplice_python/codice_base/";    
 
     SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmss");

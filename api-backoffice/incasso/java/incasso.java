@@ -16,11 +16,11 @@ public class incasso {
         Date date = new Date();
 
 		// URL + URI
-        String requestUrl = "https://int-ecommerce.cartasi.it/" + "ecomm/api/bo/contabilizza";
+        String requestUrl = "https://int-ecommerce.nexi.it/" + "ecomm/api/bo/contabilizza";
 
         // Parametri per calcolo MAC
-        String apiKey = "<ALIAS>"; // Alias fornito da CartaSi
-        String chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Chiave segreta fornita da CartaSi
+        String apiKey = "<ALIAS>"; // Alias fornito da Nexi
+        String chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Chiave segreta fornita da Nexi
         String codTrans = "dib30v789b078"; // Codice della transazione da incassare 
         String importo = "5000"; // 5000 = 50,00 EURO (indicare la cifra in centesimi)
         String divisa = "978"; // divisa 978 indica EUR

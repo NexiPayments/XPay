@@ -1,7 +1,7 @@
 <?php
 
 // Chiave segreta
-$chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Sostituire con il valore fornito da CartaSi
+$chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Sostituire con il valore fornito da Nexi
 
 // Controllo che ci siano tutti i parametri di ritorno obbligatori per calcolare il MAC
 $requiredParams = array('codTrans', 'esito', 'importo', 'divisa', 'data', 'orario', 'codAut', 'mac');

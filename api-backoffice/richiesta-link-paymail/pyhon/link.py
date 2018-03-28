@@ -11,16 +11,16 @@ import time
 import requests
 
 # URL + URI
-requestUrl = "https://int-ecommerce.cartasi.it/" + "ecomm/api/bo/richiestaPayMail";
+requestUrl = "https://int-ecommerce.nexi.it/" + "ecomm/api/bo/richiestaPayMail";
 
 # Parametri per calcolo MAC
-apiKey = "<ALIAS>" # Alias fornito da CartaSi
+apiKey = "<ALIAS>" # Alias fornito da Nexi
 codTrans = "APIBO_" + datetime.datetime.today().strftime('%Y%m%d%H%M%S')
 importo = "5000" # 5000 = 50,00 EURO (indicare la cifra in centesimi)
 timeout = "4" # Durata in ore del link di pagamento che verrà generato 
 url = "https://my.server/esito.py" # URL dove viene rimandato il cliente al termine del pagamento
 timeStamp = (int(time.time())) * 1000
-chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>" # Chiave segreta fornita da CartaSi
+chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>" # Chiave segreta fornita da Nexi
 
 # Calcolo MAC
 mac_str = 'apiKey=' + apiKey + \

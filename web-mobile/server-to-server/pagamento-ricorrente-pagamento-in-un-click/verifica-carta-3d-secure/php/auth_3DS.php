@@ -1,10 +1,10 @@
 <?php
 
 // apiKey e chiave segreta
-$apiKey = "<ALIAS>"; // Sostituire con il valore fornito da CartaSi
-$chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Sostituire con il valore fornito da CartaSi
+$apiKey = "<ALIAS>"; // Sostituire con il valore fornito da Nexi
+$chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Sostituire con il valore fornito da Nexi
 
-$requestUrl = "https://int-ecommerce.cartasi.it/ecomm/api/recurring/creaNonceVerificaCarta";
+$requestUrl = "https://int-ecommerce.nexi.it/ecomm/api/recurring/creaNonceVerificaCarta";
 $merchantServerUrl = "https://" . $_SERVER['HTTP_HOST'] . "/xpay/php/S2S/recurring/verifica_carta_3DS/";
 
 $pan = "4000000000000002"; // Pan della carta

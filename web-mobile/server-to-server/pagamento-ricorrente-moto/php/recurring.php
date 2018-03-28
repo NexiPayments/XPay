@@ -1,10 +1,10 @@
 <?php
 
-// apiKey e chiave segreta - sostituire con i valori forniti da CartaSi
+// apiKey e chiave segreta - sostituire con i valori forniti da Nexi
 $apiKey = "<ALIAS>";
 $chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>";
 
-$requestUrl = "https://int-ecommerce.cartasi.it/ecomm/api/recurring/pagamentoRicorrenteMOTO";
+$requestUrl = "https://int-ecommerce.nexi.it/ecomm/api/recurring/pagamentoRicorrenteMOTO";
 
 $codTrans = "TESTPS_" . date('YmdHis'); // Codice della transazione
 $importo = "5000"; // 5000 = 50,00 EURO (indicare la cifra in centesimi)

@@ -16,13 +16,13 @@ public class elencoAssociazioni {
         Date date = new Date();
 
         // URL + URI
-        String requestUrl = "https://int-ecommerce.cartasi.it/" + "ecomm/api/cfpan/reportAssociazioni";
+        String requestUrl = "https://int-ecommerce.nexi.it/" + "ecomm/api/cfpan/reportAssociazioni";
 
         // Parametri per calcolo MAC
-        String apiKey = "<ALIAS>"; // Alias fornito da CartaSi
-        String chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Chiave segreta fornita da CartaSi
+        String apiKey = "<ALIAS>"; // Alias fornito da Nexi
+        String chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Chiave segreta fornita da Nexi
         String valore = "<valore>"; // Numero contratto oppure codice fiscale
-        String codiceGruppo = "<codiceGruppo>"; // Gruppo fornito da CartaSi
+        String codiceGruppo = "<codiceGruppo>"; // Gruppo fornito da Nexi
         String tipo = "CodiceContratto"; // "CodiceContratto" oppure "CodiceFiscale"
         String timeStamp = "" + System.currentTimeMillis();
         

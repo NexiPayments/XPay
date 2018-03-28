@@ -1,8 +1,8 @@
 <?php
 
 // apiKey e chiave segreta
-$apiKey = "<ALIAS>"; // Sostituire con il valore fornito da CartaSi
-$chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Sostituire con il valore fornito da CartaSi
+$apiKey = "<ALIAS>"; // Sostituire con il valore fornito da Nexi
+$chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Sostituire con il valore fornito da Nexi
 
 if ($_REQUEST['esito'] != "OK") {
     echo "Esito 3D-Secure:" . $_REQUEST['esito'] . "-" . $_REQUEST['messaggio'];
@@ -34,7 +34,7 @@ if ($macCalculated != $_REQUEST['mac']) {
 
 // Dopo i controlli inizio il pagamento effettivo
 
-$requestUrl = "https://int-ecommerce.cartasi.it/ecomm/api/recurring/primoPagamento3DS";
+$requestUrl = "https://int-ecommerce.nexi.it/ecomm/api/recurring/primoPagamento3DS";
 
 $codTrans = "TESTPS_" . date('YmdHis'); // Codice della transazione
 $importo = "5000"; // 5000 = 50,00 EURO (indicare la cifra in centesimi)

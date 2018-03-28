@@ -1,4 +1,4 @@
 # Server to server
-CartaSi mette a disposizione degli esercenti anche altre tipologie di soluzioni più strutturate dove i dati sensibili relativi alla transazione vengono gestiti direttamente dai server dell'esercente. Questo permette una completa personalizzazione dell'esperienza di pagamento, ma è subordinato all'ottenimento della certificazione di sicurezza PCI DSS ad esclusione dei pagamenti ricorrenti dove non vengono veicolati dall'esercente i dati carta.
+Nexi mette a disposizione degli esercenti anche altre tipologie di soluzioni più strutturate dove i dati sensibili relativi alla transazione vengono gestiti direttamente dai server dell'esercente. Questo permette una completa personalizzazione dell'esperienza di pagamento, ma è subordinato all'ottenimento della certificazione di sicurezza PCI DSS ad esclusione dei pagamenti ricorrenti dove non vengono veicolati dall'esercente i dati carta.
 
-I servizi esposti da CartaSi utilizzano metodi http POST e una struttura RESTful. Le richieste devono essere inviate in formato JSON e le risposte sono un oggetto JSON formattato.
+I servizi esposti da Nexi utilizzano metodi http POST e una struttura RESTful. Le richieste devono essere inviate in formato JSON e le risposte sono un oggetto JSON formattato.

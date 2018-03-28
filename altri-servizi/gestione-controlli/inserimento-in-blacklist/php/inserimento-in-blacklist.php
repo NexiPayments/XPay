@@ -4,12 +4,12 @@ $connection = curl_init();
 
 if ($connection) {
 
-    $requestURL = "https://int-ecommerce.cartasi.it/"; // URL
+    $requestURL = "https://int-ecommerce.nexi.it/"; // URL
     $requestURI = "ecomm/api/blacklist/aggiungi"; // URI
     
     // Parametri calcolo MAC
-    $apiKey = "<ALIAS>"; // Alias fornito da CartaSi
-    $chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Chiave segreta fornita da CartaSi
+    $apiKey = "<ALIAS>"; // Alias fornito da Nexi
+    $chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Chiave segreta fornita da Nexi
     $tipo = "CodiceContratto"; // CodiceContratto oppure CodiceFiscale
     $valore = "<valore>"; // NumeroContratto oppure codice fiscale
     $descrizione = "<descrizione>"; // Motivo inserimento in blacklist

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Security.Cryptography;
@@ -14,10 +14,10 @@ namespace XPay
         {
 
             // apikey e chiave segreta
-            string APIKEY = "<ALIAS>"; // Sostituire con il valore fornito da CartaSi
-            string CHIAVESEGRETA = "CsT830052L63QHNd1E351uh73272Q23h175650k9wU28T7EU1Hd6l156N5I2oBY6U7OW7kP34282C5965r8V0hpG72ojq5B58896G4Q6oXGc36a6z3Tn6J271B4N33p45C28369j7E025O2245GK7T5p1MNN5T25S05UJxCKH0TMc98fBQ66M2NxRDzrR66c7RG2K367D4xiV54X9kY592K5E3V1X1U01AO85P3n4z28eJIL13t8Ww3P28eg24y2"; // Sostituire con il valore fornito da CartaSi
+            string APIKEY = "<ALIAS>"; // Sostituire con il valore fornito da Nexi
+            string CHIAVESEGRETA = "CHIAVE SEGRETA PER CALCOLO MAC"; // Sostituire con il valore fornito da Nexi
 
-            string requestUrl = "https://int-ecommerce.cartasi.it/ecomm/api/recurring/pagamentoRicorrente";
+            string requestUrl = "https://int-ecommerce.nexi.it/ecomm/api/recurring/pagamentoRicorrente";
 
             DateTime data = DateTime.Now;
             string codTrans = "TESTPS_" + data.ToString("yyyyMMddHHmmss");

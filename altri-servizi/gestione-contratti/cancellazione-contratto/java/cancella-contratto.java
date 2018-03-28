@@ -16,11 +16,11 @@ public class cancellaContratto {
         Date date = new Date();
 
         // URL + URI
-        String requestUrl = "https://int-ecommerce.cartasi.it/" + "ecomm/api/contratti/cancellaContratto";
+        String requestUrl = "https://int-ecommerce.nexi.it/" + "ecomm/api/contratti/cancellaContratto";
 
         // Parametri per calcolo MAC
-        String apiKey = "<ALIAS>"; // Alias fornito da CartaSi
-        String chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Chiave segreta fornita da CartaSi
+        String apiKey = "<ALIAS>"; // Alias fornito da Nexi
+        String chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Chiave segreta fornita da Nexi
         String numeroContratto = "3dsa3asc34a"; // Numero del contratto da cancellare
         String timeStamp = "" + System.currentTimeMillis();
         

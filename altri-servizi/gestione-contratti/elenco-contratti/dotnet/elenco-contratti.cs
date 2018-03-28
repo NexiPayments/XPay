@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Security.Cryptography;
@@ -13,7 +13,7 @@ namespace XPay
         {
 
             // URL + URI
-            string requestUrl = "https://int-ecommerce.cartasi.it/" + "ecomm/api/contratti/queryContratti";
+            string requestUrl = "https://int-ecommerce.nexi.it/" + "ecomm/api/contratti/queryContratti";
 
             // Parametri per calcolo MAC
             string apiKey = "<ALIAS>";

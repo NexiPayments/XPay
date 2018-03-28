@@ -16,11 +16,11 @@ public class paymail {
         Date date = new Date();
 
         // URL + URI
-        String requestUrl = "https://int-ecommerce.cartasi.it/" + "ecomm/api/bo/richiestaPayMail";
+        String requestUrl = "https://int-ecommerce.nexi.it/" + "ecomm/api/bo/richiestaPayMail";
 
         // Parametri per calcolo MAC
-        String apiKey = "<ALIAS>"; // Alias fornito da CartaSi
-        String chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Chiave segreta fornita da CartaSi
+        String apiKey = "<ALIAS>"; // Alias fornito da Nexi
+        String chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Chiave segreta fornita da Nexi
         String codTrans = "APIBO_" + dateFormat.format(date); // Codice della transazione
         String importo = "5000"; // 5000 = 50,00 EURO (indicare la cifra in centesimi)
         String timeout = "4"; // Durata in ore del link di pagamento che verrà generato 

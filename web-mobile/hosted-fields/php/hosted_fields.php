@@ -1,10 +1,10 @@
 <?php
 
 // Alias e chiave segreta
-$alias = "<ALIAS>"; // Sostituire con il valore fornito da CartaSi
-$chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Sostituire con il valore fornito da CartaSi
+$alias = "<ALIAS>"; // Sostituire con il valore fornito da Nexi
+$chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Sostituire con il valore fornito da Nexi
 
-$requestUrl = "https://int-ecommerce.cartasi.it/ecomm/ecomm/DispatcherServlet";
+$requestUrl = "https://int-ecommerce.nexi.it/ecomm/ecomm/DispatcherServlet";
 $merchantServerUrl = "https://" . $_SERVER['HTTP_HOST'] . "/xpay/pagamento_semplice/codice_base/";
 
 $codiceTransazione  = "TESTPS_" . date('YmdHis');
@@ -18,7 +18,7 @@ $mac = sha1('alias=' . $alias . 'codTrans=' . $codiceTransazione . 'divisa=' . $
 
 <html>
     <head>
-        <script type="text/javascript" src="https://int-ecommerce.cartasi.it/ecomm/hostedPayments/JavaScript/custom?bundle=HP_FULL&alias=<?php echo $alias; ?>"></script>
+        <script type="text/javascript" src="https://int-ecommerce.nexi.it/ecomm/hostedPayments/JavaScript/custom?bundle=HP_FULL&alias=<?php echo $alias; ?>"></script>
         <script type="text/javascript">
             // Configurazione iniziale SDK            
             $(document).ready(function () {

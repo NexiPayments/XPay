@@ -4,12 +4,12 @@ $connection = curl_init();
 
 if ($connection) {
 
-    $requestURL = "https://int-ecommerce.cartasi.it/"; // URL
+    $requestURL = "https://int-ecommerce.nexi.it/"; // URL
     $requestURI = "ecomm/api/bo/situazioneOrdine"; // URI
     
     // Parametri per calcolo MAC
-    $apiKey = "<ALIAS>"; // Alias fornito da CartaSi
-    $chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Chiave segreta fornita da CartaSi
+    $apiKey = "<ALIAS>"; // Alias fornito da nexi
+    $chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Chiave segreta fornita da nexi
     $codiceTransazione = "4bnrgtj34b"; // Codice della transazione di cui si cercano i dettagli
     $timeStamp = (time()) * 1000;
 
