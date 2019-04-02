@@ -6,3 +6,4 @@
 ### [Dettagli contratto](/altri-servizi/gestione-contratti/dettagli-contratto)
 ### [Disabilita contratto](/altri-servizi/gestione-contratti/disabilita-contratto)
 ### [Elenco contratti](/altri-servizi/gestione-contratti/elenco-contratti)
+### [Stato contratti](/altri-servizi/gestione-contratti/stato-contratti)

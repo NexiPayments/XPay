@@ -16,3 +16,9 @@ Permette di ottenere l’elenco degli ordini che soddisfano i filtri impostati n
 
 ## 5. [Richiesta link PayMail](/api-backoffice/richiesta-link-paymail/)
 Il servizio consente di ottenere un link di pagamento che inviato per e-mail al cliente gli consente di essere rimandato sulle pagine di pagamento XPay e completare la transazione in sicurezza.
+
+## 6. [Elenco ordini](/api-backoffice/report/)
+Questa API richiede i dati necessari per effettuare il download di un report schedulato dal BO. Partendo dalla data di riferimento, ritorna l’elenco delle istanze di report elaborate più prossime alla data stessa. Se la data riferimento non viene specificata, viene usata la data corrente. Mediante i dati contenuti nel vettore listaReport sarà possibile effettuare il download del report stesso. Per poter scaricare il file, è necessario configuarare i report nel backoffice, nella sezione "Report" inserendo tipo, filtri, dati e formato del report che si vuole venga generato.
+
+## 7. [Richiesta link PayMail](/api-backoffice/report-paymail/)
+Effettua la ricerca dei link paymail restituendo lo stato del pagamento. Ogni ricerca restituirà un massimo di 100 link.
