@@ -26,6 +26,7 @@ Le credenziali necessarie all'utilizzo dei servizi XPay, si possono trovare nell
 
 ## Architettura
 Per scrivere il codice di questa applicazione sono stati applicati i principi del pattern MVP.
+
 ---
 ## XPay
 La versione utilizzata della libreria XPay SDK è quella presente sul ramo **master** di questo progetto.
