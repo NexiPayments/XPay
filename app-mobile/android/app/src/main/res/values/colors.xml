@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#2d32aa</color>
+    <color name="nexiPrimary">#2d32aa</color>
+
+    <color name="green">#2f9709</color>
+    <color name="red">#d41e27</color>
+
+    <color name="gray_bg">#A9A9A9</color>
+
+</resources>

@@ -1,0 +1,9 @@
+
+.*
+!/.gitignore
+
+local\.properties
+
+*.iml
+
+app/build

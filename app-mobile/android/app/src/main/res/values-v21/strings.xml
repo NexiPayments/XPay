@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="user_paid_google">User has paid through Google Pay with circuit: </string>
+</resources>

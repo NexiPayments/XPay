@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="environments_arrays">
+        <item>Production</item>
+        <item>Testing</item>
+        <item>Internal testing</item>
+    </string-array>
+</resources>

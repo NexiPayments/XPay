@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nonce_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="it.nexi.xpaysdksample.ui.main.nonce.NonceFrame">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/xpay_card_form"
+        android:textColor="@color/nexi"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <it.nexi.xpay.CardFormView.CardFormViewMultiline
+        android:id="@+id/cardFormMultiline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="15dp" />
+
+
+    <FrameLayout
+        android:layout_width="@dimen/frame_fab_dim"
+        android:layout_height="@dimen/frame_fab_dim"
+        android:layout_below="@+id/cardFormMultiline"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_top_fab">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/button_pay_multiline"
+            android:layout_width="@dimen/fab_dim"
+            android:layout_height="@dimen/fab_dim"
+            android:src="@android:color/transparent"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/pay"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:elevation="16dp"
+            android:textColor="@android:color/white"/>
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_confirm"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="25dp"
+        android:gravity="center"
+        android:text="@string/confirm_text"
+        android:textColor="@color/nexiPrimary"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/text_you"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+
+
+    <TextView
+        android:id="@+id/text_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="129dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_you" />
+
+    <TextView
+        android:id="@+id/text_you"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="49dp"
+        android:text="@string/you_will_pay"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/text_amount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_confirm" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/button_cancel"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="25dp"
+        app:borderWidth="0dp"
+        android:backgroundTint="@color/red"
+        android:src="@drawable/ic_cancel_white"
+        app:layout_constraintBottom_toBottomOf="@+id/button_confirm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button_confirm" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/button_confirm"
+        android:layout_width="@dimen/fab_dim"
+        android:layout_height="@dimen/fab_dim"
+        app:borderWidth="0dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="25dp"
+        android:backgroundTint="@color/green"
+        android:src="@drawable/ic_check_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_amount" />
+
+</android.support.constraint.ConstraintLayout>
