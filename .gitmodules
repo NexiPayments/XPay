@@ -1,0 +1,3 @@
+[submodule "XPay/app-mobile/ios"]
+	path = XPay/app-mobile/ios
+	url = https://github.com/NexiPayments/XPay.git
