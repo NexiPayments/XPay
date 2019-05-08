@@ -1,0 +1,736 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B14D427CBB7BC99FC969B9C /* Pods_XPay_SDK_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C40108EDB4861FB2454BE157 /* Pods_XPay_SDK_Sample.framework */; };
+		92197215216F861A00CA3E57 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92197214216F861A00CA3E57 /* HomeInteractor.swift */; };
+		92197217216F862B00CA3E57 /* HomeInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92197216216F862B00CA3E57 /* HomeInteractorProtocol.swift */; };
+		92677BBA213447A000F6B5EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92677BB9213447A000F6B5EB /* AppDelegate.swift */; };
+		92677BBC213447A000F6B5EB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92677BBB213447A000F6B5EB /* HomeViewController.swift */; };
+		92677BBE213447A000F6B5EB /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92677BBD213447A000F6B5EB /* AboutViewController.swift */; };
+		92677BC1213447A000F6B5EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92677BBF213447A000F6B5EB /* Main.storyboard */; };
+		92677BC3213447A100F6B5EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92677BC2213447A100F6B5EB /* Assets.xcassets */; };
+		92677BC6213447A100F6B5EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92677BC4213447A100F6B5EB /* LaunchScreen.storyboard */; };
+		92677BD121354ADC00F6B5EB /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92677BD021354ADC00F6B5EB /* HomePresenter.swift */; };
+		92677BD321354B0700F6B5EB /* HomePresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92677BD221354B0700F6B5EB /* HomePresenterProtocol.swift */; };
+		92677BD721354B7A00F6B5EB /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92677BD621354B7A00F6B5EB /* Product.swift */; };
+		92677BDA21354C0200F6B5EB /* ProductRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92677BD921354C0200F6B5EB /* ProductRepository.swift */; };
+		92677BDC21354C1B00F6B5EB /* ProductRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92677BDB21354C1B00F6B5EB /* ProductRepositoryProtocol.swift */; };
+		92677BDF21354C7D00F6B5EB /* WebServiceProductMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92677BDE21354C7D00F6B5EB /* WebServiceProductMock.swift */; };
+		92677BE121354C9600F6B5EB /* WebServiceProductProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92677BE021354C9600F6B5EB /* WebServiceProductProtocol.swift */; };
+		92677BE421354D0900F6B5EB /* ProductResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92677BE321354D0900F6B5EB /* ProductResponse.swift */; };
+		92677BE621355B8F00F6B5EB /* HomeViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92677BE521355B8F00F6B5EB /* HomeViewProtocol.swift */; };
+		92677BE921355D3F00F6B5EB /* ProductViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92677BE821355D3F00F6B5EB /* ProductViewCell.swift */; };
+		92677BEC2135622B00F6B5EB /* ImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92677BEB2135622B00F6B5EB /* ImageViewExtensions.swift */; };
+		92677BFA2135888C00F6B5EB /* PaymentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92677BF92135888C00F6B5EB /* PaymentRepository.swift */; };
+		92677BFC2135889900F6B5EB /* PaymentRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92677BFB2135889900F6B5EB /* PaymentRepositoryProtocol.swift */; };
+		92677BFE213589A200F6B5EB /* XPayConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92677BFD213589A200F6B5EB /* XPayConstants.swift */; };
+		92677C0221368CB400F6B5EB /* CardInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92677C0121368CB400F6B5EB /* CardInputViewController.swift */; };
+		92677C0421368CDA00F6B5EB /* CardInputViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92677C0321368CDA00F6B5EB /* CardInputViewProtocol.swift */; };
+		92677C0621368EA500F6B5EB /* CardInputPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92677C0521368EA500F6B5EB /* CardInputPresenter.swift */; };
+		92677C0821368EBC00F6B5EB /* CardInputPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92677C0721368EBC00F6B5EB /* CardInputPresenterProtocol.swift */; };
+		92677C0B21368FE900F6B5EB /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92677C0A21368FE900F6B5EB /* ConfirmViewController.swift */; };
+		92677C0D21368FF600F6B5EB /* ConfirmViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92677C0C21368FF600F6B5EB /* ConfirmViewProtocol.swift */; };
+		92677C0F2136900100F6B5EB /* ConfirmPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92677C0E2136900100F6B5EB /* ConfirmPresenter.swift */; };
+		92677C112136900D00F6B5EB /* ConfirmPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92677C102136900D00F6B5EB /* ConfirmPresenterProtocol.swift */; };
+		92677C162136EBF000F6B5EB /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92677C152136EBF000F6B5EB /* ResultViewController.swift */; };
+		92677C182136EBFA00F6B5EB /* ResultViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92677C172136EBFA00F6B5EB /* ResultViewProtocol.swift */; };
+		92677C1A2136EC3200F6B5EB /* ResultPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92677C192136EC3200F6B5EB /* ResultPresenter.swift */; };
+		92677C1C2136EC5100F6B5EB /* ResultPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92677C1B2136EC5100F6B5EB /* ResultPresenterProtocol.swift */; };
+		92688EC9213D130900A9E511 /* AboutViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92688EC8213D130900A9E511 /* AboutViewProtocol.swift */; };
+		92688ECB213D131400A9E511 /* AboutPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92688ECA213D131400A9E511 /* AboutPresenter.swift */; };
+		92688ECD213D132400A9E511 /* AboutPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92688ECC213D132400A9E511 /* AboutPresenterProtocol.swift */; };
+		92688ECF213D664C00A9E511 /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92688ECE213D664C00A9E511 /* IntExtensions.swift */; };
+		926F6106216E2E3200077EE7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 926F6105216E2E3200077EE7 /* StoreKit.framework */; };
+		92F4FF942194532800CED900 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 92F4FF932194532800CED900 /* Settings.bundle */; };
+		92F4FF962194556600CED900 /* SettingsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F4FF952194556600CED900 /* SettingsHelper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		92BCC10B21931FCB00EB2DBB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		92197214216F861A00CA3E57 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		92197216216F862B00CA3E57 /* HomeInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractorProtocol.swift; sourceTree = "<group>"; };
+		92677BB6213447A000F6B5EB /* XPay SDK Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "XPay SDK Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92677BB9213447A000F6B5EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		92677BBB213447A000F6B5EB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		92677BBD213447A000F6B5EB /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		92677BC0213447A000F6B5EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		92677BC2213447A100F6B5EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		92677BC5213447A100F6B5EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		92677BC7213447A100F6B5EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92677BD021354ADC00F6B5EB /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		92677BD221354B0700F6B5EB /* HomePresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenterProtocol.swift; sourceTree = "<group>"; };
+		92677BD621354B7A00F6B5EB /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		92677BD921354C0200F6B5EB /* ProductRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRepository.swift; sourceTree = "<group>"; };
+		92677BDB21354C1B00F6B5EB /* ProductRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRepositoryProtocol.swift; sourceTree = "<group>"; };
+		92677BDE21354C7D00F6B5EB /* WebServiceProductMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceProductMock.swift; sourceTree = "<group>"; };
+		92677BE021354C9600F6B5EB /* WebServiceProductProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceProductProtocol.swift; sourceTree = "<group>"; };
+		92677BE321354D0900F6B5EB /* ProductResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductResponse.swift; sourceTree = "<group>"; };
+		92677BE521355B8F00F6B5EB /* HomeViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewProtocol.swift; sourceTree = "<group>"; };
+		92677BE821355D3F00F6B5EB /* ProductViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewCell.swift; sourceTree = "<group>"; };
+		92677BEB2135622B00F6B5EB /* ImageViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewExtensions.swift; sourceTree = "<group>"; };
+		92677BF92135888C00F6B5EB /* PaymentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentRepository.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		92677BFB2135889900F6B5EB /* PaymentRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentRepositoryProtocol.swift; sourceTree = "<group>"; };
+		92677BFD213589A200F6B5EB /* XPayConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPayConstants.swift; sourceTree = "<group>"; };
+		92677C0121368CB400F6B5EB /* CardInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardInputViewController.swift; sourceTree = "<group>"; };
+		92677C0321368CDA00F6B5EB /* CardInputViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardInputViewProtocol.swift; sourceTree = "<group>"; };
+		92677C0521368EA500F6B5EB /* CardInputPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardInputPresenter.swift; sourceTree = "<group>"; };
+		92677C0721368EBC00F6B5EB /* CardInputPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardInputPresenterProtocol.swift; sourceTree = "<group>"; };
+		92677C0A21368FE900F6B5EB /* ConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmViewController.swift; sourceTree = "<group>"; };
+		92677C0C21368FF600F6B5EB /* ConfirmViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmViewProtocol.swift; sourceTree = "<group>"; };
+		92677C0E2136900100F6B5EB /* ConfirmPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPresenter.swift; sourceTree = "<group>"; };
+		92677C102136900D00F6B5EB /* ConfirmPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPresenterProtocol.swift; sourceTree = "<group>"; };
+		92677C152136EBF000F6B5EB /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		92677C172136EBFA00F6B5EB /* ResultViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewProtocol.swift; sourceTree = "<group>"; };
+		92677C192136EC3200F6B5EB /* ResultPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultPresenter.swift; sourceTree = "<group>"; };
+		92677C1B2136EC5100F6B5EB /* ResultPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultPresenterProtocol.swift; sourceTree = "<group>"; };
+		92688EC8213D130900A9E511 /* AboutViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewProtocol.swift; sourceTree = "<group>"; };
+		92688ECA213D131400A9E511 /* AboutPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPresenter.swift; sourceTree = "<group>"; };
+		92688ECC213D132400A9E511 /* AboutPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPresenterProtocol.swift; sourceTree = "<group>"; };
+		92688ECE213D664C00A9E511 /* IntExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtensions.swift; sourceTree = "<group>"; };
+		926F6104216E2DAE00077EE7 /* XPay SDK Sample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "XPay SDK Sample.entitlements"; sourceTree = "<group>"; };
+		926F6105216E2E3200077EE7 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		92F4FF932194532800CED900 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		92F4FF952194556600CED900 /* SettingsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsHelper.swift; sourceTree = "<group>"; };
+		958ECF9687CE6984BB978B29 /* Pods-XPay SDK Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPay SDK Sample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XPay SDK Sample/Pods-XPay SDK Sample.debug.xcconfig"; sourceTree = "<group>"; };
+		C40108EDB4861FB2454BE157 /* Pods_XPay_SDK_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XPay_SDK_Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5E0E3FEBD33B34CB6CB9C25 /* Pods-XPay SDK Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPay SDK Sample.release.xcconfig"; path = "Pods/Target Support Files/Pods-XPay SDK Sample/Pods-XPay SDK Sample.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		92677BB3213447A000F6B5EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				926F6106216E2E3200077EE7 /* StoreKit.framework in Frameworks */,
+				7B14D427CBB7BC99FC969B9C /* Pods_XPay_SDK_Sample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F5EE6FE35850A0E7C0F6CAA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				958ECF9687CE6984BB978B29 /* Pods-XPay SDK Sample.debug.xcconfig */,
+				D5E0E3FEBD33B34CB6CB9C25 /* Pods-XPay SDK Sample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4810A7B31F97CFF90B278F31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				926F6105216E2E3200077EE7 /* StoreKit.framework */,
+				C40108EDB4861FB2454BE157 /* Pods_XPay_SDK_Sample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		92677BAD213447A000F6B5EB = {
+			isa = PBXGroup;
+			children = (
+				92677BB8213447A000F6B5EB /* XPay SDK Sample */,
+				92677BB7213447A000F6B5EB /* Products */,
+				4810A7B31F97CFF90B278F31 /* Frameworks */,
+				1F5EE6FE35850A0E7C0F6CAA /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		92677BB7213447A000F6B5EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				92677BB6213447A000F6B5EB /* XPay SDK Sample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		92677BB8213447A000F6B5EB /* XPay SDK Sample */ = {
+			isa = PBXGroup;
+			children = (
+				926F6104216E2DAE00077EE7 /* XPay SDK Sample.entitlements */,
+				92677BEA2135621C00F6B5EB /* utils */,
+				92677BD421354B6800F6B5EB /* data */,
+				92677BCD21344A8C00F6B5EB /* ui */,
+				92677BB9213447A000F6B5EB /* AppDelegate.swift */,
+				92677BBF213447A000F6B5EB /* Main.storyboard */,
+				92677BC2213447A100F6B5EB /* Assets.xcassets */,
+				92677BC4213447A100F6B5EB /* LaunchScreen.storyboard */,
+				92677BC7213447A100F6B5EB /* Info.plist */,
+				92F4FF932194532800CED900 /* Settings.bundle */,
+			);
+			path = "XPay SDK Sample";
+			sourceTree = "<group>";
+		};
+		92677BCD21344A8C00F6B5EB /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				92677BCF21344AC200F6B5EB /* about */,
+				92677BCE21344A9400F6B5EB /* home */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		92677BCE21344A9400F6B5EB /* home */ = {
+			isa = PBXGroup;
+			children = (
+				92677BFF21368BFA00F6B5EB /* nonce */,
+				92677BE721355D2400F6B5EB /* cell */,
+				92677BBB213447A000F6B5EB /* HomeViewController.swift */,
+				92677BE521355B8F00F6B5EB /* HomeViewProtocol.swift */,
+				92677BD021354ADC00F6B5EB /* HomePresenter.swift */,
+				92677BD221354B0700F6B5EB /* HomePresenterProtocol.swift */,
+				92197214216F861A00CA3E57 /* HomeInteractor.swift */,
+				92197216216F862B00CA3E57 /* HomeInteractorProtocol.swift */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		92677BCF21344AC200F6B5EB /* about */ = {
+			isa = PBXGroup;
+			children = (
+				92677BBD213447A000F6B5EB /* AboutViewController.swift */,
+				92688EC8213D130900A9E511 /* AboutViewProtocol.swift */,
+				92688ECA213D131400A9E511 /* AboutPresenter.swift */,
+				92688ECC213D132400A9E511 /* AboutPresenterProtocol.swift */,
+			);
+			path = about;
+			sourceTree = "<group>";
+		};
+		92677BD421354B6800F6B5EB /* data */ = {
+			isa = PBXGroup;
+			children = (
+				92677BDD21354C6100F6B5EB /* network */,
+				92677BD821354BF200F6B5EB /* repository */,
+				92677BD521354B6D00F6B5EB /* entity */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		92677BD521354B6D00F6B5EB /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				92677BD621354B7A00F6B5EB /* Product.swift */,
+			);
+			path = entity;
+			sourceTree = "<group>";
+		};
+		92677BD821354BF200F6B5EB /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				92677BF82135887B00F6B5EB /* payment */,
+				92677BF72135887300F6B5EB /* product */,
+			);
+			path = repository;
+			sourceTree = "<group>";
+		};
+		92677BDD21354C6100F6B5EB /* network */ = {
+			isa = PBXGroup;
+			children = (
+				92677BF12135843300F6B5EB /* product */,
+				92677BE221354CF400F6B5EB /* response */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		92677BE221354CF400F6B5EB /* response */ = {
+			isa = PBXGroup;
+			children = (
+				92677BE321354D0900F6B5EB /* ProductResponse.swift */,
+			);
+			path = response;
+			sourceTree = "<group>";
+		};
+		92677BE721355D2400F6B5EB /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				92677BE821355D3F00F6B5EB /* ProductViewCell.swift */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		92677BEA2135621C00F6B5EB /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				92F4FF97219474AB00CED900 /* settings */,
+				92677BEB2135622B00F6B5EB /* ImageViewExtensions.swift */,
+				92688ECE213D664C00A9E511 /* IntExtensions.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		92677BF12135843300F6B5EB /* product */ = {
+			isa = PBXGroup;
+			children = (
+				92677BDE21354C7D00F6B5EB /* WebServiceProductMock.swift */,
+				92677BE021354C9600F6B5EB /* WebServiceProductProtocol.swift */,
+			);
+			path = product;
+			sourceTree = "<group>";
+		};
+		92677BF72135887300F6B5EB /* product */ = {
+			isa = PBXGroup;
+			children = (
+				92677BD921354C0200F6B5EB /* ProductRepository.swift */,
+				92677BDB21354C1B00F6B5EB /* ProductRepositoryProtocol.swift */,
+			);
+			path = product;
+			sourceTree = "<group>";
+		};
+		92677BF82135887B00F6B5EB /* payment */ = {
+			isa = PBXGroup;
+			children = (
+				92677BF92135888C00F6B5EB /* PaymentRepository.swift */,
+				92677BFB2135889900F6B5EB /* PaymentRepositoryProtocol.swift */,
+			);
+			path = payment;
+			sourceTree = "<group>";
+		};
+		92677BFF21368BFA00F6B5EB /* nonce */ = {
+			isa = PBXGroup;
+			children = (
+				92677C142136EBD300F6B5EB /* result */,
+				92677C0921368F8700F6B5EB /* confirm */,
+				92677C0021368C9800F6B5EB /* input */,
+			);
+			path = nonce;
+			sourceTree = "<group>";
+		};
+		92677C0021368C9800F6B5EB /* input */ = {
+			isa = PBXGroup;
+			children = (
+				92677C0121368CB400F6B5EB /* CardInputViewController.swift */,
+				92677C0321368CDA00F6B5EB /* CardInputViewProtocol.swift */,
+				92677C0521368EA500F6B5EB /* CardInputPresenter.swift */,
+				92677C0721368EBC00F6B5EB /* CardInputPresenterProtocol.swift */,
+			);
+			path = input;
+			sourceTree = "<group>";
+		};
+		92677C0921368F8700F6B5EB /* confirm */ = {
+			isa = PBXGroup;
+			children = (
+				92677C0A21368FE900F6B5EB /* ConfirmViewController.swift */,
+				92677C0C21368FF600F6B5EB /* ConfirmViewProtocol.swift */,
+				92677C0E2136900100F6B5EB /* ConfirmPresenter.swift */,
+				92677C102136900D00F6B5EB /* ConfirmPresenterProtocol.swift */,
+			);
+			path = confirm;
+			sourceTree = "<group>";
+		};
+		92677C142136EBD300F6B5EB /* result */ = {
+			isa = PBXGroup;
+			children = (
+				92677C152136EBF000F6B5EB /* ResultViewController.swift */,
+				92677C172136EBFA00F6B5EB /* ResultViewProtocol.swift */,
+				92677C192136EC3200F6B5EB /* ResultPresenter.swift */,
+				92677C1B2136EC5100F6B5EB /* ResultPresenterProtocol.swift */,
+			);
+			path = result;
+			sourceTree = "<group>";
+		};
+		92F4FF97219474AB00CED900 /* settings */ = {
+			isa = PBXGroup;
+			children = (
+				92F4FF952194556600CED900 /* SettingsHelper.swift */,
+				92677BFD213589A200F6B5EB /* XPayConstants.swift */,
+			);
+			path = settings;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		92677BB5213447A000F6B5EB /* XPay SDK Sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92677BCA213447A100F6B5EB /* Build configuration list for PBXNativeTarget "XPay SDK Sample" */;
+			buildPhases = (
+				62EB10139922375A3A11A107 /* [CP] Check Pods Manifest.lock */,
+				92677BB2213447A000F6B5EB /* Sources */,
+				92677BB3213447A000F6B5EB /* Frameworks */,
+				92677BB4213447A000F6B5EB /* Resources */,
+				92BCC10B21931FCB00EB2DBB /* Embed Frameworks */,
+				9CAD39967B52A7996E3741F1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "XPay SDK Sample";
+			productName = "XPay SDK Sample";
+			productReference = 92677BB6213447A000F6B5EB /* XPay SDK Sample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		92677BAE213447A000F6B5EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Nexi Spa";
+				TargetAttributes = {
+					92677BB5213447A000F6B5EB = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1020;
+						SystemCapabilities = {
+							com.apple.ApplePay = {
+								enabled = 1;
+							};
+							com.apple.GameCenter.iOS = {
+								enabled = 0;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 92677BB1213447A000F6B5EB /* Build configuration list for PBXProject "XPay SDK Sample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 92677BAD213447A000F6B5EB;
+			productRefGroup = 92677BB7213447A000F6B5EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				92677BB5213447A000F6B5EB /* XPay SDK Sample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		92677BB4213447A000F6B5EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92F4FF942194532800CED900 /* Settings.bundle in Resources */,
+				92677BC6213447A100F6B5EB /* LaunchScreen.storyboard in Resources */,
+				92677BC3213447A100F6B5EB /* Assets.xcassets in Resources */,
+				92677BC1213447A000F6B5EB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		62EB10139922375A3A11A107 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XPay SDK Sample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CAD39967B52A7996E3741F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XPay SDK Sample/Pods-XPay SDK Sample-frameworks.sh",
+				"${PODS_ROOT}/Nexi_XPay/XPaySDK.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XPaySDK.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XPay SDK Sample/Pods-XPay SDK Sample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		92677BB2213447A000F6B5EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92677BE121354C9600F6B5EB /* WebServiceProductProtocol.swift in Sources */,
+				92677C1C2136EC5100F6B5EB /* ResultPresenterProtocol.swift in Sources */,
+				92677BE421354D0900F6B5EB /* ProductResponse.swift in Sources */,
+				92677C112136900D00F6B5EB /* ConfirmPresenterProtocol.swift in Sources */,
+				92197217216F862B00CA3E57 /* HomeInteractorProtocol.swift in Sources */,
+				92677BBE213447A000F6B5EB /* AboutViewController.swift in Sources */,
+				92677C182136EBFA00F6B5EB /* ResultViewProtocol.swift in Sources */,
+				92677BDF21354C7D00F6B5EB /* WebServiceProductMock.swift in Sources */,
+				92677BBA213447A000F6B5EB /* AppDelegate.swift in Sources */,
+				92677BBC213447A000F6B5EB /* HomeViewController.swift in Sources */,
+				92677BEC2135622B00F6B5EB /* ImageViewExtensions.swift in Sources */,
+				92677BD121354ADC00F6B5EB /* HomePresenter.swift in Sources */,
+				92677BE921355D3F00F6B5EB /* ProductViewCell.swift in Sources */,
+				92677C1A2136EC3200F6B5EB /* ResultPresenter.swift in Sources */,
+				92677C0621368EA500F6B5EB /* CardInputPresenter.swift in Sources */,
+				92677BFE213589A200F6B5EB /* XPayConstants.swift in Sources */,
+				92688ECF213D664C00A9E511 /* IntExtensions.swift in Sources */,
+				92688ECB213D131400A9E511 /* AboutPresenter.swift in Sources */,
+				92677C0B21368FE900F6B5EB /* ConfirmViewController.swift in Sources */,
+				92677C162136EBF000F6B5EB /* ResultViewController.swift in Sources */,
+				92677BE621355B8F00F6B5EB /* HomeViewProtocol.swift in Sources */,
+				92677BDA21354C0200F6B5EB /* ProductRepository.swift in Sources */,
+				92677C0821368EBC00F6B5EB /* CardInputPresenterProtocol.swift in Sources */,
+				92677BFA2135888C00F6B5EB /* PaymentRepository.swift in Sources */,
+				92677BFC2135889900F6B5EB /* PaymentRepositoryProtocol.swift in Sources */,
+				92677BDC21354C1B00F6B5EB /* ProductRepositoryProtocol.swift in Sources */,
+				92677BD321354B0700F6B5EB /* HomePresenterProtocol.swift in Sources */,
+				92688EC9213D130900A9E511 /* AboutViewProtocol.swift in Sources */,
+				92F4FF962194556600CED900 /* SettingsHelper.swift in Sources */,
+				92677BD721354B7A00F6B5EB /* Product.swift in Sources */,
+				92677C0D21368FF600F6B5EB /* ConfirmViewProtocol.swift in Sources */,
+				92688ECD213D132400A9E511 /* AboutPresenterProtocol.swift in Sources */,
+				92677C0421368CDA00F6B5EB /* CardInputViewProtocol.swift in Sources */,
+				92677C0221368CB400F6B5EB /* CardInputViewController.swift in Sources */,
+				92677C0F2136900100F6B5EB /* ConfirmPresenter.swift in Sources */,
+				92197215216F861A00CA3E57 /* HomeInteractor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		92677BBF213447A000F6B5EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92677BC0213447A000F6B5EB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		92677BC4213447A100F6B5EB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92677BC5213447A100F6B5EB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		92677BC8213447A100F6B5EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		92677BC9213447A100F6B5EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		92677BCB213447A100F6B5EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 958ECF9687CE6984BB978B29 /* Pods-XPay SDK Sample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "XPay SDK Sample/XPay SDK Sample.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PTL268WG69;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "XPay SDK Sample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nexi.xpaysample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		92677BCC213447A100F6B5EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5E0E3FEBD33B34CB6CB9C25 /* Pods-XPay SDK Sample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "XPay SDK Sample/XPay SDK Sample.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PTL268WG69;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "XPay SDK Sample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nexi.xpaysample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		92677BB1213447A000F6B5EB /* Build configuration list for PBXProject "XPay SDK Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92677BC8213447A100F6B5EB /* Debug */,
+				92677BC9213447A100F6B5EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92677BCA213447A100F6B5EB /* Build configuration list for PBXNativeTarget "XPay SDK Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92677BCB213447A100F6B5EB /* Debug */,
+				92677BCC213447A100F6B5EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 92677BAE213447A000F6B5EB /* Project object */;
+}
