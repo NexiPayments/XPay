@@ -1,0 +1,2 @@
+# Pagamento successivo
+Quando devi provvedere all'addebito su un contratto precedentemente registrato, il tuo sistema deve inviare una chiamata con i dati del contratto precedentemente registrato con il primo pagamento o verifica carta 3D-Secure o SSL. Questo tipo di chiamata richiederà l'inserimento del codice 3D-Secure anche sui pagamenti ricorrenti.
