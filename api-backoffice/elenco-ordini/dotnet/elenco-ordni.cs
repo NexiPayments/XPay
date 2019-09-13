@@ -21,6 +21,7 @@ namespace XPay
             string codTrans = "<CODICE TRANSAZIONE>"; // Vuoto per tutte le transazioni altrimenti cerca la transazione inserita
             string periodo = "gg/mm/aaaa - gg/mm/aaaa"; // gg/mm/aaaa - gg/mm/aaaa 
             string canale = "All"; // All || MySi || MyBank || CartaCredito || PayPal
+            string[] stato = {"Autorizzato"}; // Transazioni autorizzate
             string timeStamp = (Math.Round((DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1))).TotalMilliseconds)).ToString();
 
             // Calcolo MAC
@@ -32,6 +33,7 @@ namespace XPay
             requestParams["codiceTransazione"] = codTrans;
             requestParams["mac"] = mac;
             requestParams["periodo"] = periodo;
+            requestParams["stato"] = stato;
             requestParams["canale"] = canale;
             requestParams["timeStamp"] = timeStamp;
 

@@ -1,3 +1,6 @@
+// Elenco Ordini
+
+import java.security.MessageDigest;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpPost;
@@ -7,26 +10,27 @@ import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import org.json.JSONObject;
 
-public class elencoOrdine {
+public class elencoOrdini {
 
     public static void main(String[] a) throws Exception {
 
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
         Date date = new Date();
 
-		// URL + URI
+        // URL + URI
         String requestUrl = "https://int-ecommerce.nexi.it/" + "ecomm/api/bo/reportOrdini";
 
         // Parametri per calcolo MAC
-        String apiKey = "<ALIAS>"; // Alias fornito da Nexi
-        String chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Chiave segreta fornita da Nexi
+        String apiKey = "ALIAS_WEB_00002830"; // Alias fornito da Nexi
+        String chiaveSegreta = "9R6JMIHU9SDUBFH62IUXSQ7VOSD17VMP"; // Chiave segreta fornita da Nexi
         String codTrans = ""; // Vuoto per tutte le transazioni altrimenti cerca la transazione inserita
-        String periodo = "01/01/2017 - 30/07/2017"; // gg/mm/aaaa - gg/mm/aaaa
-        String canale = "All"; // All || MySi || MyBank || CartaCredito || PayPal
-        String stato = "Autorizzate"; // Transazioni Autorizzate o Negate o annullate
+        String periodo = "01/07/2019 - 30/07/2019"; // gg/mm/aaaa - gg/mm/aaaa
+        String canale = "All"; // All || MyBank || CartaCredito || PayPal
+        String stato[] = {"Autorizzato"}; // Transazioni Autorizzate
         String timeStamp = "" + System.currentTimeMillis();        
-		
+        
         String stringaMac = "apiKey=" + apiKey
                 + "codiceTransazione=" + codTrans
                 + "periodo=" + periodo
@@ -43,6 +47,7 @@ public class elencoOrdine {
         json.put("codiceTransazione", codTrans);
         json.put("periodo", periodo);
         json.put("canale", canale);
+        json.put("stato", stato);
         json.put("timeStamp", timeStamp);
         json.put("mac", macCalculated);
 
@@ -58,6 +63,8 @@ public class elencoOrdine {
 
         // Parametri di ritorno
         JSONObject responseObj = new JSONObject(responseString);
+        
+        System.out.print(responseObj.toString());
 
     }
 
