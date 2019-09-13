@@ -1,4 +1,7 @@
+                                            
 <?php
+
+// Lightbox - Pagamento
 
 $APIKEY = "<ALIAS>"; // Sostituire con il valore fornito da Nexi
 $CHIAVESEGRETA = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Sostituire con il valore fornito da Nexi
@@ -35,8 +38,8 @@ $urlPost = "https://www.merchant-server.it/build/urlPost.php";
                         transactionId: '<?php echo $codiceTransazione; ?>',
                         currency: '<?php echo $divisa; ?>',
                         timeStamp: '<?php echo $timestamp; ?>',
-                        mac: '<?php echo $mac; ?>'<urlPost>,
-                        urlPost: '<?php $urlPost; ?>'</urlPost>
+                        mac: '<?php echo $mac; ?>',
+                        //urlPost: '<?php $urlPost; ?>'
                     },
                     customParams: {},
                     language: XPay.LANGUAGE.ITA
@@ -57,3 +60,5 @@ $urlPost = "https://www.merchant-server.it/build/urlPost.php";
         </script>
     </body>
 </html>
+                    
+                
