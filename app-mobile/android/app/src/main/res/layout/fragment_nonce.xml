@@ -35,7 +35,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/margin_top_fab">
 
-        <android.support.design.widget.FloatingActionButton
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/button_pay_multiline"
             android:layout_width="@dimen/fab_dim"
             android:layout_height="@dimen/fab_dim"

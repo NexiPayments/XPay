@@ -2,20 +2,18 @@ package it.nexi.xpaysdksample.ui.main.confirm;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.TextView;
 
+import androidx.fragment.app.Fragment;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import it.nexi.xpaysdksample.R;
-import it.nexi.xpaysdksample.data.repository.payment.PaymentRepository;
 import it.nexi.xpaysdksample.ui.main.IMainContract;
 import it.nexi.xpaysdksample.ui.main.home.HomeFrame;
-import it.nexi.xpaysdksample.ui.main.nonce.NonceFrame;
 import it.nexi.xpaysdksample.ui.main.result.ResultFrame;
 
 public class ConfirmFrame extends Fragment implements IConfirmContract.View {

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/root_layout"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -87,7 +87,7 @@ android:textColor="@color/nexi"
 
             />
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/input_layout_alias"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -99,9 +99,9 @@ android:textColor="@color/nexi"
                 android:layout_height="wrap_content"
                 android:hint="@string/alias"
                 android:inputType="text" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/input_layout_secret_key"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -112,7 +112,7 @@ android:textColor="@color/nexi"
                 android:layout_height="wrap_content"
                 android:hint="@string/secret_key"
                 android:inputType="text" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
     </LinearLayout>
 
 
@@ -139,7 +139,7 @@ android:textColor="@color/nexi"
             android:textStyle="bold"
             />
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/input_layout_terminal_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -151,9 +151,9 @@ android:textColor="@color/nexi"
                 android:layout_height="wrap_content"
                 android:hint="@string/terminal_id"
                 android:inputType="text" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <android.support.design.widget.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/input_layout_merchant_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -164,11 +164,11 @@ android:textColor="@color/nexi"
                 android:layout_height="wrap_content"
                 android:hint="Display name"
                 android:inputType="text" />
-        </android.support.design.widget.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
     </LinearLayout>
 
 
-    <android.support.design.widget.FloatingActionButton
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/button_save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -184,4 +184,4 @@ android:textColor="@color/nexi"
 
 
 
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,7 +19,7 @@
         tools:layout_editor_absoluteX="126dp"
         tools:layout_editor_absoluteY="33dp" />
 
-    <android.support.design.widget.FloatingActionButton
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/button_confirm"
         android:layout_width="@dimen/fab_dim_125"
         android:layout_height="@dimen/fab_dim_125"

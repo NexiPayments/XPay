@@ -6,7 +6,6 @@ import it.nexi.xpay.CallBacks.ApiResponseCallback;
 import it.nexi.xpay.CallBacks.FrontOfficeCallbackQP;
 import it.nexi.xpay.GooglePay.GooglePayRequest;
 import it.nexi.xpay.Models.WebApi.Responses.BackOffice.ApiReportOrdiniResponse;
-import it.nexi.xpay.Models.WebApi.Responses.HostedPayments.ApiCreaNonceResponse;
 import it.nexi.xpay.Utils.BackOffice.ReportOrdiniUtils;
 
 public interface IPaymentRepository {

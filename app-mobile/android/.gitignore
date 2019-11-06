@@ -2,8 +2,17 @@
 .*
 !/.gitignore
 
+app/app\.iml
+
 local\.properties
 
-*.iml
+xpay-sdk-sample-android\.iml
 
-app/build
+XPaySDK/XPaySDK\.iml
+
+.gradle
+*.lock
+
+*.bin
+app/release
+build

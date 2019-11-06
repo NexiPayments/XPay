@@ -104,12 +104,14 @@ public class HomePresenter implements IHomeContract.Presenter {
     // Call pay method in paymentRepository manage the outcome of the operation (onConfirm and onCancel) through FrontOfficeQPCallback (ChromeTab)
     @Override
     public void onPayChromeTabClick() {
+        transactionCode = "FR"+System.currentTimeMillis();
         mPaymentRepository.payChrome(transactionCode, totalPrice, getFrontOfficeCallbackQp());
     }
 
     // Call pay method in paymentRepository manage the outcome of the operation (onConfirm and onCancel) through FrontOfficeQPCallback (WebView)
     @Override
     public void onPayWebViewClick() {
+        transactionCode = "FR"+System.currentTimeMillis();
         mPaymentRepository.pay(transactionCode, totalPrice, getFrontOfficeCallbackQp());
     }
 
