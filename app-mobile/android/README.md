@@ -74,7 +74,7 @@ Di seguito viene illustrato un frammento di codice utile per aprire in WebView l
 
 ### Gradle
 ```gradle
-    implementation 'it.nexi.xpay:XPaySDK:1.1.5'
+    implementation 'it.nexi.xpay:XPaySDK:1.2.0'
 ```
 
 ### Documentazione
