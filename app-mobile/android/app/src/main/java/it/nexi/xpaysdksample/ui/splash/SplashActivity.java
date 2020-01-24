@@ -2,7 +2,6 @@ package it.nexi.xpaysdksample.ui.splash;
 
 import android.content.Intent;
 import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import it.nexi.xpaysdksample.R;

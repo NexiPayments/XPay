@@ -18,6 +18,8 @@ public interface INonceContract {
         void onSuccessCreateNonce(String nonce);
         void onErrorCreateNonce(String msg);
         void onAttached();
-        void onInvalidCardException();
+        void onInvalidPan();
+        void onInvalidExpiry();
+        void onInvalidCvv();
     }
 }

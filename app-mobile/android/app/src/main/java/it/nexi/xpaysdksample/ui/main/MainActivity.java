@@ -5,6 +5,13 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import com.google.android.material.navigation.NavigationView;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.widget.Toolbar;
 import android.view.MenuItem;
 
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -82,7 +89,6 @@ public class MainActivity extends GooglePayActivity
         toggle.syncState();
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-
     }
 
     @Override
@@ -173,10 +179,11 @@ public class MainActivity extends GooglePayActivity
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if(data != null){
+        super.onActivityResult(requestCode, resultCode, data);
+        if (data != null) {
             Settings settings = new Settings(data.getStringExtra("alias"),
                     data.getStringExtra("key"),
-                    data.getIntExtra("env",0),
+                    data.getIntExtra("env", 0),
                     data.getStringExtra("terminalId"),
                     data.getStringExtra("merchantName"));
             mMainPresenter.onActivityResult(settings, requestCode, resultCode);

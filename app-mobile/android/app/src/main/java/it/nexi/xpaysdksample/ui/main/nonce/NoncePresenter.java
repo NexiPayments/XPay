@@ -1,9 +1,5 @@
 package it.nexi.xpaysdksample.ui.main.nonce;
 
-
-import android.os.Bundle;
-
-import it.nexi.xpay.Utils.Exceptions.InvalidCardException;
 import it.nexi.xpaysdksample.R;
 import it.nexi.xpaysdksample.ui.main.IMainContract;
 import it.nexi.xpaysdksample.ui.main.confirm.ConfirmFrame;
@@ -12,12 +8,10 @@ public class NoncePresenter implements  INonceContract.Presenter{
 
     private INonceContract.View mNonceView;
     private IMainContract.Router mRouter;
-    private Bundle bundle;
 
     NoncePresenter(INonceContract.View view){
         super();
         mNonceView = view;
-
     }
 
     @Override
@@ -42,7 +36,17 @@ public class NoncePresenter implements  INonceContract.Presenter{
     }
 
     @Override
-    public void onInvalidCardException() {
-        mNonceView.displaySnackBar(R.string.invalid_card_data);
+    public void onInvalidPan() {
+        mNonceView.displaySnackBar(R.string.invalid_pan);
+    }
+
+    @Override
+    public void onInvalidExpiry() {
+        mNonceView.displaySnackBar(R.string.invalid_expiry_date);
+    }
+
+    @Override
+    public void onInvalidCvv() {
+        mNonceView.displaySnackBar(R.string.invalid_cvv);
     }
 }

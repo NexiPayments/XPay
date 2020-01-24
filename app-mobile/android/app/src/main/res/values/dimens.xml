@@ -2,16 +2,13 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <dimen name="nav_header_vertical_spacing">8dp</dimen>
     <dimen name="nav_header_height">176dp</dimen>
-    <dimen name="fab_margin">16dp</dimen>
     <dimen name="product_item_height">120dp</dimen>
     <dimen name="button_googlepay_min_height">20dp</dimen>
     <dimen name="button_googlepay_min_width">90dp</dimen>
 
     <dimen name="fab_dim">100dp</dimen>
     <dimen name="fab_dim_125">125dp</dimen>
-    <dimen name="fab_dim_80">80dp</dimen>
     <dimen name="frame_fab_dim">130dp</dimen>
     <dimen name="margin_top_fab">50dp</dimen>
 

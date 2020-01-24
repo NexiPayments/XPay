@@ -32,12 +32,12 @@ public class MainPresenter implements IMainContract.Presenter {
 
     @Override
     public void onCreateActivity() {
-        Constants.ALIAS = mMainView.getPref("alias") == null ? "" : mMainView.<String>getPref("alias");
-        Constants.SECRET_KEY = mMainView.getPref("key") == null ? "" : mMainView.<String>getPref("key");
+        Constants.ALIAS = mMainView.getPref("alias") == null ? "" : mMainView.getPref("alias");
+        Constants.SECRET_KEY = mMainView.getPref("key") == null ? "" : mMainView.getPref("key");
         Integer position = mMainView.<Integer>getPref("env") == null ? 0 : mMainView.<Integer>getPref("env");
         Constants.ENVIRONMENT = EnvironmentUtils.Environment.values()[position];
-        Constants.TERMINAL_ID = mMainView.getPref("terminalId") == null ? "" : mMainView.<String>getPref("terminalId");
-        Constants.MERCHANT_NAME = mMainView.getPref("merchantName") == null ? "" : mMainView.<String>getPref("merchantName");
+        Constants.TERMINAL_ID = mMainView.getPref("terminalId") == null ? "" : mMainView.getPref("terminalId");
+        Constants.MERCHANT_NAME = mMainView.getPref("merchantName") == null ? "" : mMainView.getPref("merchantName");
 
         mMainView.displayNavigationDrawer();
         goToFragment(HomeFrame.class, mMainView);
@@ -58,16 +58,16 @@ public class MainPresenter implements IMainContract.Presenter {
                 Constants.ENVIRONMENT = EnvironmentUtils.Environment.values()[mMainView.<Integer>getPref(key)];
                 break;
             case "alias":
-                Constants.ALIAS = mMainView.<String>getPref(key);
+                Constants.ALIAS = mMainView.getPref(key);
                 break;
             case "key":
-                Constants.SECRET_KEY = mMainView.<String>getPref(key);
+                Constants.SECRET_KEY = mMainView.getPref(key);
                 break;
             case "terminalId":
-                Constants.TERMINAL_ID = mMainView.<String>getPref(key);
+                Constants.TERMINAL_ID = mMainView.getPref(key);
                 break;
             case "merchantName":
-                Constants.MERCHANT_NAME = mMainView.<String>getPref(key);
+                Constants.MERCHANT_NAME = mMainView.getPref(key);
                 break;
         }
     }

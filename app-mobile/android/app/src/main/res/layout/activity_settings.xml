@@ -98,7 +98,7 @@ android:textColor="@color/nexi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/alias"
-                android:inputType="text" />
+                android:inputType="text"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -162,7 +162,7 @@ android:textColor="@color/nexi"
                 android:id="@+id/input_merchant_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Display name"
+                android:hint="@string/display_name"
                 android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
     </LinearLayout>

@@ -3,6 +3,10 @@ package it.nexi.xpaysdksample.ui.main.home;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
+import androidx.fragment.app.Fragment;
+import androidx.appcompat.app.AlertDialog;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;

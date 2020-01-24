@@ -20,29 +20,29 @@ public class WebServiceProduct implements IWebServiceProduct {
                 "                                            \"id\": \"MAC001\",\n" +
                 "                                            \"name\": \"Computer\",\n" +
                 "                                            \"imageUrl\": \"https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/computer-256.png\",\n" +
-                "                                            \"formattedPrice\": \"€ 1399.00\",\n" +
-                "                                            \"price\": 1399.0\n" +
+                "                                            \"formattedPrice\": \"€ 0.01\",\n" +
+                "                                            \"price\": 0.01\n" +
                 "                                        },\n" +
                 "                                        {\n" +
                 "                                            \"id\": \"HEAD001\",\n" +
                 "                                            \"name\": \"Headphones\",\n" +
                 "                                            \"imageUrl\": \"https://cdn2.iconfinder.com/data/icons/thesquid-ink-40-free-flat-icon-pack/64/headphone-big-256.png\",\n" +
-                "                                            \"formattedPrice\": \"€ 69.90\",\n" +
-                "                                            \"price\": 69.90\n" +
+                "                                            \"formattedPrice\": \"€ 0.01\",\n" +
+                "                                            \"price\": 0.01\n" +
                 "                                        },\n" +
                 "                                        {\n" +
                 "                                            \"id\": \"SHIRT001\",\n" +
                 "                                            \"name\": \"T-shirt\",\n" +
                 "                                            \"imageUrl\": \"https://cdn0.iconfinder.com/data/icons/kameleon-free-pack-rounded/110/T-Shirt-2-256.png\",\n" +
-                "                                            \"formattedPrice\": \"€ 9.90\",\n" +
-                "                                            \"price\": 9.90\n" +
+                "                                            \"formattedPrice\": \"€ 0.01\",\n" +
+                "                                            \"price\": 0.01\n" +
                 "                                        },\n" +
                 "                                        {\n" +
                 "                                            \"id\": \"SHOES001\",\n" +
                 "                                            \"name\": \"Sneakers shoes\",\n" +
                 "                                            \"imageUrl\": \"https://cdn3.iconfinder.com/data/icons/fitness-24/512/2-256.png\",\n" +
-                "                                            \"formattedPrice\": \"€ 99,90\",\n" +
-                "                                            \"price\": 99.90\n" +
+                "                                            \"formattedPrice\": \"€ 0.01\",\n" +
+                "                                            \"price\": 0.01\n" +
                 "                                        }\n" +
                 "                                    ]\n" +
                 "}";
