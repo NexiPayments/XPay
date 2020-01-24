@@ -62,7 +62,7 @@ Di seguito viene illustrato un frammento di codice utile per aprire in WebView l
 
 ### Form nativa
 ``` xml
-    <it.nexi.xpay.CardFormView.CardFormViewMultiline
+    <it.nexi.xpay.nativeForm.CardFormViewMultiline
         android:id="@+id/cardFormMultiline"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -74,7 +74,7 @@ Di seguito viene illustrato un frammento di codice utile per aprire in WebView l
 
 ### Gradle
 ```gradle
-    implementation 'it.nexi.xpay:XPaySDK:1.2.0'
+    implementation 'it.nexi.xpay:XPaySDK:1.2.1'
 ```
 
 ### Documentazione
