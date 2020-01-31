@@ -33,7 +33,7 @@ La versione utilizzata della libreria XPay SDK è quella presente sul ramo **mas
 
 ### Pagamento semplice
 #### WebView
-Di seguito viene illustrato un frammento di codice utile per aprire in WKWebView la pagina di cassa fornita da XPay.</BR>
+Di seguito viene illustrato un frammento di codice utile per aprire in WebView la pagina di cassa fornita da XPay.</BR>
 ```java 
 
     // Pay with front office page (QP method with WebView)
