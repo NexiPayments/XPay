@@ -32,31 +32,77 @@ Per scrivere il codice di questa applicazione sono stati applicati i principi de
 La versione utilizzata della libreria XPay SDK è quella presente sul ramo **master** di questo progetto.
 
 ### Pagamento semplice
-Di seguito viene illustrato un frammento di codice utile per aprire in WebView la pagina di cassa fornita da XPay.
-
+#### WebView
+Di seguito viene illustrato un frammento di codice utile per aprire in WKWebView la pagina di cassa fornita da XPay.</BR>
 ```java 
-    // Generate ApiFrontOfficeQp request
-    private ApiFrontOfficeQPRequest getFrontOfficeRequest(String transactionCode, int amount) {
-        // Create the API request using the QP Alias
-        ApiFrontOfficeQPRequest apiFrontOfficeQPRequest = null;
-        try {
-            apiFrontOfficeQPRequest = new ApiFrontOfficeQPRequest(Constants.ALIAS,
-                    transactionCode, CurrencyUtilsQP.EUR, amount);
-        } catch (UnsupportedEncodingException | MacException e) {
-            e.printStackTrace();
-        }
-        return apiFrontOfficeQPRequest;
-    }
 
     // Pay with front office page (QP method with WebView)
-    @Override
     public void pay(String transactionCode, int amount, FrontOfficeCallbackQP handler) {
-        setXPay();
-        ApiFrontOfficeQPRequest apiFrontOfficeQPRequest = getFrontOfficeRequest(transactionCode, amount);
+        // Create the API request using the QP Alias
+        try {
+            ApiFrontOfficeQPRequest apiFrontOfficeQPRequest = new ApiFrontOfficeQPRequest(Constants.ALIAS, transactionCode, CurrencyUtilsQP.EUR, amount);
+            // Choose if navigation will be enabled into the WebView
+            boolean isNavigationEnabled = true;
+            // Set the environment
+            xPay.FrontOffice.setEnvironment(ENVIRONMENT);
+            xPay.FrontOffice.paga(apiFrontOfficeQPRequest, isNavigationEnabled, new FrontOfficeCallbackQP() {
+                @Override
+                public void onConfirm(ApiFrontOfficeQPResponse confirmResponse) {
+                    if (confirmResponse.isValid())
+                        Log.i(TAG, "Payment was successful with the circuit " + confirmResponse.getBrand());
+                    else
+                        Log.e(TAG, "There are security errors during the payment process");
+                }
 
-        // Set the environment
-        xPay.FrontOffice.setEnvironment(ENVIRONMENT);
-        xPay.FrontOffice.paga(apiFrontOfficeQPRequest, true, handler);
+                @Override
+                public void onError(ApiErrorResponse errorResponse) {
+                    Log.e(TAG, "Error during payament process: " + errorResponse.getError().getMessage());
+                }
+
+                @Override
+                public void onCancel(ApiFrontOfficeQPResponse cancelResponse) {
+                    Log.w(TAG, "Payment was cancelled");
+                }
+            });
+        } catch (UnsupportedEncodingException | MacException e) {
+            Log.e(TAG, "Error during request creation: " + e.getLocalizedMessage());
+        }
+    }
+```
+#### ChromeCustomTabs
+Dalla versione 1.1.0 e successive è possibile utilizzare il componente ChromeCustomTabs tramite il meotodo **pagaChrome** presente nella sezione FrontOffice.</BR>
+***Questo metodo di integrazione è consigliato per l'utilizzo di Google Pay***
+```java 
+
+    // Pay with front office page (QP method with WebView)
+    public void payCustomTabs(String transactionCode, int amount, FrontOfficeCallbackQP handler) {
+        // Create the API request using the QP Alias
+        try {
+            ApiFrontOfficeQPRequest apiFrontOfficeQPRequest = new ApiFrontOfficeQPRequest(Constants.ALIAS, transactionCode, CurrencyUtilsQP.EUR, amount);
+            // Set the environment
+            xPay.FrontOffice.setEnvironment(ENVIRONMENT);
+            xPay.FrontOffice.pagaChrome(apiFrontOfficeQPRequest, false, new FrontOfficeCallbackQP() {
+                @Override
+                public void onConfirm(ApiFrontOfficeQPResponse confirmResponse) {
+                    if (confirmResponse.isValid())
+                        Log.i(TAG, "Payment was successful with the circuit " + confirmResponse.getBrand());
+                    else
+                        Log.e(TAG, "There are security errors during the payment process");
+                }
+
+                @Override
+                public void onError(ApiErrorResponse errorResponse) {
+                    Log.e(TAG, "Error during payament process: " + errorResponse.getError().getMessage());
+                }
+
+                @Override
+                public void onCancel(ApiFrontOfficeQPResponse cancelResponse) {
+                    Log.w(TAG, "Payment was cancelled");
+                }
+            });
+        } catch (UnsupportedEncodingException | MacException e) {
+            Log.e(TAG, "Error during request creation: " + e.getLocalizedMessage());
+        }
     }
 ```
 
