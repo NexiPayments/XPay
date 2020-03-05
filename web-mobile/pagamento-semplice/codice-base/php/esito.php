@@ -7,7 +7,7 @@ $CHIAVESEGRETA = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Sostituire con il valore
 $requiredParams = array('codTrans', 'esito', 'importo', 'divisa', 'data', 'orario', 'codAut', 'mac');
 foreach ($requiredParams as $param) {
     if (!isset($_REQUEST[$param])) {
-        echo 'Paramentro mancante ' . $field;
+        echo 'Paramentro mancante ' . $param;
         exit;
     }
 }
