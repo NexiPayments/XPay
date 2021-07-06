@@ -5,7 +5,7 @@ $connection = curl_init();
 if ($connection) {
 
     $requestURL = "https://int-ecommerce.nexi.it/"; // URL
-    $requestURI = "ecomm/api/bo/richiestaPayMail"; // URI
+    $requestURI = "ecomm/api/bo/richiestaPay-by-Link"; // URI
     
     // Parametri per calcolo MAC
     $apiKey = "<ALIAS>"; // Alias fornito da Nexi
