@@ -1,2 +1,2 @@
-# iframe
-Qui trovi tutte le informazioni per personalizzare la pagina di cassa.
+# i-frame
+E' possibile integrare XPay direttamente sul proprio e-commerce integrando la pagina di cassa all'interno di un i-frame. 
