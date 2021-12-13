@@ -1,3 +1,6 @@
+                                            
+// Contabilizzazione
+
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -43,6 +46,8 @@ namespace XPay
 
         private static dynamic Post(string requestUrl, string json) 
         {
+            System.Net.ServicePointManager.SecurityProtocol = System.Net.SecurityProtocolType.Tls12;
+
             var httpContent = new StringContent(json, Encoding.UTF8, "application/json");
 
             using (var httpClient = new HttpClient())
@@ -84,8 +89,5 @@ namespace XPay
 
     }
 }
-
-
-
-
-
+                    
+                

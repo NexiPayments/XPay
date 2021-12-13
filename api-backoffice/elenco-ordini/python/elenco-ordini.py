@@ -1,5 +1,8 @@
                                             
 # -*- coding: utf-8 -*-
+
+# Elenco Ordini
+
 import sys
 if sys.version_info >= (3,):
     from urllib.parse import urlencode
@@ -19,7 +22,7 @@ apiKey = "<ALIAS>" # Alias fornito da Nexi
 chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>" # Chiave segreta fornita da Nexi
 codTrans = "<CODICE TRANSAZIONE>" # Vuoto per tutte le transazioni altrimenti cerca la transazione inserita
 periodo = "01/01/2017 - 31/12/2017" # gg/mm/aaaa - gg/mm/aaaa 
-canale = "All" # All | MySi | MyBank | CartaCredito | PayPal
+canale = "All" # All | MyBank | CartaCredito | PayPal
 stato = ["Autorizzato"] # Transazioni autorizzate
 timeStamp = (int(time.time())) * 1000
 
@@ -47,3 +50,5 @@ response  = requests.post(requestUrl,json=requestParams,headers={'Content-Type':
 
 # Parametri di ritorno
 response_data = response.json()
+                    
+                

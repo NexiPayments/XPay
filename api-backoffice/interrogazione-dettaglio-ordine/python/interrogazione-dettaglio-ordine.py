@@ -1,5 +1,8 @@
                                             
 # -*- coding: utf-8 -*-
+
+# Interrogazione dettaglio ordine    
+
 import sys
 if sys.version_info >= (3,):
     from urllib.parse import urlencode
@@ -40,3 +43,5 @@ response  = requests.post(requestUrl,json=requestParams,headers={'Content-Type':
 
 # Parametri di ritorno
 response_data = response.json()
+                    
+                

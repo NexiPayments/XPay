@@ -1,3 +1,4 @@
+                                            
 // Google Pay - Integrazione tramite API
 
 import org.apache.http.HttpEntity;
@@ -52,15 +53,6 @@ public class googlepay {
         json.put("timeStamp", timeStamp);
         json.put("mac", macCalculated);
         
-        JSONObject parametriAggiuntivi = new JSONObject();
-        
-        parametriAggiuntivi.put("nome", "Mario");
-        parametriAggiuntivi.put("cognome", "Rossi");
-        parametriAggiuntivi.put("mail", "cardHolder@mail.it");
-        parametriAggiuntivi.put("descrizione", "descrizione");
-        parametriAggiuntivi.put("Note1", "note");
-
-        json.put("parametriAggiuntivi", parametriAggiuntivi);
 
         // Chiamata API
         CloseableHttpClient httpClient = HttpClientBuilder.create().build();

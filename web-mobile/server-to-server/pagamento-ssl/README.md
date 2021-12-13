@@ -1,2 +1,0 @@
-# Pagamento SSL
-Questo servizio effettua un operazione di pagamento e-commerce Server to Server SSL è destinata a chi desiderasse integrare sul proprio sito la funzione di richiesta autorizzazione di pagamenti tramite carta di credito senza 3D-Secure, i cui dati siano raccolti direttamente dalle pagine del proprio sito.

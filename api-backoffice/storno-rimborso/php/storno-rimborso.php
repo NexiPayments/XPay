@@ -1,4 +1,7 @@
+                                            
 <?php
+
+// Storno/rimborso
 
 $connection = curl_init();
 
@@ -27,8 +30,6 @@ if ($connection) {
         'divisa' => $divisa,
         'timeStamp' => (string) $timeStamp,
         'mac' => $mac,
-        // Facoltativi
-        //'idContabParzialePayPal' => $idContabParzialePayPal
     );
 
     curl_setopt_array($connection, array(
@@ -69,6 +70,7 @@ if ($connection) {
         echo 'Errore nella lettura del JSON di risposta';
     }
 } else {
-    echo "Impossibile connettersi!";
+    echo "Errore curl";
 }
-
+                    
+                

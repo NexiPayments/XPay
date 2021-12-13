@@ -1,0 +1,2 @@
+# Rinnovo carta 3D Secure
+Effettua un pagamento 3DSECURE e modifica contestualmente pan e scadenza di un contratto. L’api riceve in input i parametri relativi alla transazione ed il nonce generato con l’api creaNoncePrimo3DS, che si occupa di effettuare il 3DSecure.

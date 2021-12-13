@@ -1,4 +1,7 @@
+                                            
 <?php
+
+// Contabilizzazione
 
 $connection = curl_init();
 
@@ -66,5 +69,7 @@ if ($connection) {
         echo 'Errore nella lettura del JSON di risposta';
     }
 } else {
-    echo "Impossibile connettersi!";
+    echo "Errore curl";
 }
+                    
+                

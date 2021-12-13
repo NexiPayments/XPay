@@ -1,4 +1,7 @@
+                                            
 <?php
+
+// Elenco Ordini
 
 $connection = curl_init();
 
@@ -12,7 +15,7 @@ if ($connection) {
     $chiaveSegreta = "<CHIAVE SEGRETA PER CALCOLO MAC>"; // Chiave segreta fornita da Nexi
     $codiceTransazione = ""; // Vuoto per tutte le transazioni altrimenti cerca la transazione inserita
     $periodo = "01/01/2017 - 31/12/2017"; // gg/mm/aaaa - gg/mm/aaaa 
-    $canale = "All"; // All || MySi || MyBank || CartaCredito || PayPal
+    $canale = "All"; // All || MyBank || CartaCredito || PayPal
     $stato = array("Autorizzato", "Negato", "annullato"); // Transazioni Autorizzate o Negate o annullate
     $timeStamp = (time()) * 1000;
 
@@ -72,5 +75,7 @@ if ($connection) {
         echo 'Errore nella lettura del JSON di risposta';
     }
 } else {
-    echo "Impossibile connettersi!";
+    echo "Errore curl";
 }
+                    
+                

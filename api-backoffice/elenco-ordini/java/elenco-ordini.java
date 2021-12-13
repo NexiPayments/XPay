@@ -1,3 +1,4 @@
+                                            
 // Elenco Ordini
 
 import java.security.MessageDigest;
@@ -19,7 +20,7 @@ public class elencoOrdini {
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
         Date date = new Date();
 
-        // URL + URI
+		// URL + URI
         String requestUrl = "https://int-ecommerce.nexi.it/" + "ecomm/api/bo/reportOrdini";
 
         // Parametri per calcolo MAC
@@ -30,7 +31,7 @@ public class elencoOrdini {
         String canale = "All"; // All || MyBank || CartaCredito || PayPal
         String stato[] = {"Autorizzato"}; // Transazioni Autorizzate
         String timeStamp = "" + System.currentTimeMillis();        
-        
+		
         String stringaMac = "apiKey=" + apiKey
                 + "codiceTransazione=" + codTrans
                 + "periodo=" + periodo
@@ -79,3 +80,5 @@ public class elencoOrdini {
         return builder.toString();
     }
 }
+                    
+                

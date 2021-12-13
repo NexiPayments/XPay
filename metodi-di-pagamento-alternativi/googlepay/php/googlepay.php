@@ -1,3 +1,4 @@
+                                            
 <?php
 
 // Google Pay - Integrazione tramite API
@@ -25,13 +26,6 @@ if ($connection) {
         'importo' => $importo,
         'divisa' => $divisa,
         'googlePay' => $jsonGoogle,
-        'parametriAggiuntivi' => array(
-            'nome' => 'Mario',
-            'cognome' => 'Rossi',
-            'mail' => "cardHolder@mail.it",
-            'descrizione' => "descrizione",
-            'Note1' => "note",
-        ),
         'timeStamp' => (string) $timeStamp,
         'mac' => $mac
     );
