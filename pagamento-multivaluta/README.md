@@ -1,6 +1,6 @@
 # Pagamento multivaluta
-Questa soluzione si divide in tre fasi:
+Il pagamento multivaluta è gestito tramite Dinamic Currency Choice (DCC), il servizio nato dalla collaborazione tra Nexi e Global Blue, che permette ai titolari di carte di credito internazionali Visa e MasterCard, di fare acquisti nella propria valuta con un tasso di cambio garantito al momento del pagamento.
 
-1. Reindirizzare l'utente verso l'ambiente di pagamento di Nexi
-2. Gestire la chiamata Server To Server fatta da Nexi per registrare l'esito del pagamento
-3. Gestire il rientro dell'utente sul proprio sito
+Con questo servizio attivo, il titolare carta viene indirizzato verso la pagina di cassa XPay impostata in euro, il cliente potrà poi scegliere la valuta con cui procedere al pagamento.
+
+Il servizio DCC è attualmente disponibile in 39 valute.
