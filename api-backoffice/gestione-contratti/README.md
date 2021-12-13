@@ -1,9 +1,9 @@
 # Gestione contratti
 
-### [Abilita contratto](/altri-servizi/gestione-contratti/abilita-contratto)
+### [Abilita contratto](/api-backoffice/gestione-contratti/abilita-contratto)
 ### [Cancellazione contratto](/altri-servizi/gestione-contratti/cancellazione-contratto)
-### [Caricamento contratto da transazione POS](/altri-servizi/gestione-contratti/caricamento-contratto-da-transazione-pos)
+### [Caricamento contratto da transazione POS](/api-backoffice/gestione-contratti/caricamento-contratto-da-transazione-pos)
 ### [Dettagli contratto](/altri-servizi/gestione-contratti/dettagli-contratto)
-### [Disabilita contratto](/altri-servizi/gestione-contratti/disabilita-contratto)
+### [Disabilita contratto](/api-backoffice/gestione-contratti/disabilita-contratto)
 ### [Elenco contratti](/altri-servizi/gestione-contratti/elenco-contratti)
-### [Stato contratti](/altri-servizi/gestione-contratti/stato-contratti)
+### [Stato contratti](/api-backoffice/gestione-contratti/stato-contratti)
