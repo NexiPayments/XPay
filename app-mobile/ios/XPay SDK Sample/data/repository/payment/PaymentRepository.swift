@@ -35,6 +35,17 @@ class PaymentRepository: PaymentRepositoryProtocol {
         xPay?._FrontOffice.paga(request, navigation: true, parentController: parent, completionHandler: handler)
     }
     
+    // Pay with front office Safari View Controller
+    func paySafari(_ parent: UIViewController, codTrans: String, amount: Int, handler: @escaping PaymentRepositoryProtocol.QPHandler) {
+        // Create the API request using the provided Alias
+        let request = ApiFrontOfficeQPRequest(alias: XPayConstants.ALIAS, codTrans: codTrans, currency: CurrencyUtilsQP.EUR, amount: amount)
+        // Set the environment
+        xPay?._FrontOffice.SelectedEnvironment = XPayConstants.ENVIRONMENT
+        xPay?._FrontOffice.pagaSafari(request: request, parentController: parent) {(resp: ApiFrontOfficeQPResponse?) in
+            handler(resp!)
+        }
+    }
+    
     func requestNonce(_ parent: UIViewController, codTrans: String, amount: Int, card: CardFormMulti, handler: @escaping PaymentRepositoryProtocol.NonceHandler) {
         // Create Nonce using the card form component
         do {

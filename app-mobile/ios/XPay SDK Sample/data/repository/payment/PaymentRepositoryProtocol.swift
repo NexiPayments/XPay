@@ -21,6 +21,7 @@ protocol PaymentRepositoryProtocol {
     
     /// Payment operations methods
     func pay(_ parent: UIViewController, codTrans: String, amount: Int, handler: @escaping QPHandler)
+    func paySafari(_ parent: UIViewController, codTrans: String, amount: Int, handler: @escaping QPHandler)
     func requestNonce(_ parent: UIViewController, codTrans: String, amount: Int, card: CardFormMulti, handler: @escaping NonceHandler)
     func reportOrders(from: Date, to: Date, handler: @escaping OrdersHandler)
 }

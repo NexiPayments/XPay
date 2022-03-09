@@ -55,7 +55,7 @@ class HomeViewController: ApplePayViewController, HomeViewProtocol, UITableViewD
     
     // Pay using the front office page
     @IBAction func payFrontOffice(_ sender: UIButton) {
-        presenter?.payFrontOffice(self)
+        presenter?.onFrontOfficeClicked()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -72,11 +72,27 @@ class HomeViewController: ApplePayViewController, HomeViewProtocol, UITableViewD
         
         alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
         
-        dismiss { self.present(alert, animated: true) }
+        DispatchQueue.main.async {
+            self.dismiss { self.present(alert, animated: true) }
+        }
     }
     
     @IBAction func payWithApple(_ button: UIButton) {
         presenter?.payApple()
+    }
+    
+    func showPaymentOptionDialog(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .actionSheet)
+        
+        alert.addAction(UIAlertAction(title: "WKWebView", style: .default, handler: { (alert) in
+            self.presenter?.onWebViewChoosed(self)
+        }))
+        alert.addAction(UIAlertAction(title: "Safari Controller", style: .default, handler:{ (alert) in
+            self.presenter?.onSafariChoosed(self)
+        }))
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        
+        self.present(alert, animated: true, completion: nil)
     }
     
     // Go to result page

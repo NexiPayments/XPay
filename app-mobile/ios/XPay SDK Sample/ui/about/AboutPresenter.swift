@@ -31,7 +31,7 @@ class AboutPresenter: AboutPresenterProtocol {
     
     // Load the XpaySDK informations
     private func loadSDKInfo() {
-        let SDKVersion = String("1.1.0")
+        let SDKVersion = String("1.2.9")
         view?.updateSDK(version: SDKVersion)
     }
 }

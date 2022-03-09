@@ -1,16 +1,16 @@
 PODS:
-  - Nexi_XPay (1.1.6)
+  - Nexi_XPay (1.2.9)
 
 DEPENDENCIES:
   - Nexi_XPay
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - Nexi_XPay
 
 SPEC CHECKSUMS:
-  Nexi_XPay: 77900c71bd7a5c56d3d08ca2c1790351f07b9733
+  Nexi_XPay: 174d542282d512c7417ef54bf11d187cbe7ec153
 
 PODFILE CHECKSUM: c9b27c3500d11339e65d3efd4e75359d8066d5bf
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.11.2

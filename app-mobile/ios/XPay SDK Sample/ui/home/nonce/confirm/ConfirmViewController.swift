@@ -35,7 +35,9 @@ class ConfirmViewController: UIViewController, ConfirmViewProtocol {
         
         alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
         
-        self.present(alert, animated: true)
+        DispatchQueue.main.sync {
+            self.present(alert, animated: true)
+        }
     }
     
     // Go to result page

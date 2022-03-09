@@ -18,4 +18,5 @@ protocol HomeViewProtocol {
     func displaySimpleAlert(title: String, message: String)
     func payWithApple(request: XPaySDK.ApplePayRequest, handler completion: @escaping XPaySDK.ApplePayViewController.ApplePayHandler) throws
     func goToResult(codTrans: String, amount: Int)
+    func showPaymentOptionDialog(title: String, message: String)
 }

@@ -44,14 +44,28 @@ class HomePresenter : HomePresenterProtocol {
         view?.refreshProductList(products: products)
         view?.refreshTotalAmount(amount: totalAmount)
     }
-
-    func payFrontOffice(_ parent: UIViewController) {
+    
+    func onWebViewChoosed(_ parent: UIViewController) {
         // Retrieve the transaction code
         codTrans = productRepo!.getTransactionCode()
         // Go to payment page
         self.paymentRepo?.pay(parent, codTrans: self.codTrans, amount: self.totalAmount, handler: { response in
-                self.handleFrontOffice(response)
+            self.handleFrontOffice(response)
         })
+    }
+    
+    func onSafariChoosed(_ parent: UIViewController) {
+        // Retrieve the transaction code
+        codTrans = productRepo!.getTransactionCode()
+        // Go to payment page
+        self.paymentRepo?.paySafari(parent, codTrans: self.codTrans, amount: self.totalAmount, handler: { response in
+            self.handleFrontOffice(response)
+        })
+    }
+    
+    func onFrontOfficeClicked() {
+        let title = Bundle.main.infoDictionary![kCFBundleNameKey as String] as! String
+        view?.showPaymentOptionDialog(title: title, message: "Which technology do you want to use to pay?")
     }
     
     func goToPaymentDetails(_ view: CardInputViewProtocol) {
@@ -69,14 +83,17 @@ class HomePresenter : HomePresenterProtocol {
         let title = "Front office"
         var message = "Payment was canceled by user"
         if response.IsValid {
-            if !response.IsCanceled {
+            if response.Error != nil && !(response.Error!.Message).isEmpty {
+                message = "Error during payament process: \(response.Error!.Message)"
+            }
+            else if !response.IsCanceled {
                 message = "Payment was successful with the circuit \(response.Brand!)"
             }
         } else {
             message = "There are errors during payment process"
         }
         view?.displaySimpleAlert(title: title, message: message)
-    }
+    }  
     
     ///
     /// Payment process managed by Apple Pay
@@ -103,7 +120,7 @@ class HomePresenter : HomePresenterProtocol {
         let title = "Apple Pay"
         var message = "Payment was canceled by user"
         if error != nil {
-            message = "Error: \(error!.Error.Message!)"
+            message = "Error: \(error!.Error.Message)"
         } else {
             if response != nil {
                 if response!.IsSuccess {
@@ -111,7 +128,7 @@ class HomePresenter : HomePresenterProtocol {
                     self.view?.goToResult(codTrans: codTrans, amount: totalAmount)
                     return
                 } else {
-                    message = "Error: \(response!.Error.Message!)"
+                    message = "Error: \(response!.Error.Message)"
                 }
             }
         }

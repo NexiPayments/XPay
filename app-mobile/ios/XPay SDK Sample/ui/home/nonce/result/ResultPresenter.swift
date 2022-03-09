@@ -32,7 +32,7 @@ class ResultPresenter: ResultPresenterProtocol {
             var title = "Error Report Orders"
             var message: String?
             if error != nil {
-                message = error!.Error.Message!
+                message = error!.Error.Message
                 self.view?.showAlert(title: title, message: message!, handler: nil)
             } else {
                 if response!.IsSuccess {
@@ -43,7 +43,7 @@ class ResultPresenter: ResultPresenterProtocol {
                         self.view?.goToRoot()
                     })
                 } else {
-                    message = response!.Error.Message!
+                    message = response!.Error.Message
                     self.view?.showAlert(title: title, message: message!, handler: nil)
                 }
             }

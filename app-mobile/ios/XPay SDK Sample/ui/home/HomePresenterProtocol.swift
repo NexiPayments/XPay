@@ -10,7 +10,9 @@ import UIKit
 
 protocol HomePresenterProtocol {
     func onViewLoaded()
-    func payFrontOffice(_ parent: UIViewController)
+    func onWebViewChoosed(_ parent: UIViewController)
+    func onSafariChoosed(_ parent: UIViewController)
+    func onFrontOfficeClicked()
     func goToPaymentDetails(_ view: CardInputViewProtocol)
     func payApple()
 }
