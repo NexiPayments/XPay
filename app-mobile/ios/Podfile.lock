@@ -1,16 +1,16 @@
 PODS:
-  - Nexi_XPay (1.2.9)
+  - Nexi_XPay-internal-testing (1.4.3)
 
 DEPENDENCIES:
-  - Nexi_XPay
+  - Nexi_XPay-internal-testing (= 1.4.3)
 
 SPEC REPOS:
   trunk:
-    - Nexi_XPay
+    - Nexi_XPay-internal-testing
 
 SPEC CHECKSUMS:
-  Nexi_XPay: 174d542282d512c7417ef54bf11d187cbe7ec153
+  Nexi_XPay-internal-testing: 79532854cf719bd2a9bf9ba8e963ecabfb40fce0
 
-PODFILE CHECKSUM: c9b27c3500d11339e65d3efd4e75359d8066d5bf
+PODFILE CHECKSUM: 9ce253d2bfe43d15786aec1981957efdfe4b155c
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.12.1

@@ -32,7 +32,7 @@ class SettingsHelper {
     
     // Setup Apple Pay fields
     class func setApplePay() {
-        XPayConstants.Apple.MERCHANT_ID = UserDefaults.standard.string(forKey: SettingsBundleKeys.MerchantId) ?? "merchant.SofteamMerchant"
+        XPayConstants.Apple.MERCHANT_ID = UserDefaults.standard.string(forKey: SettingsBundleKeys.MerchantId) ?? "merchant.softeam.sdk"
         XPayConstants.Apple.DISPLAY_NAME = UserDefaults.standard.string(forKey: SettingsBundleKeys.DisplayName) ?? "Nexi Payments Spa"
     }
 }

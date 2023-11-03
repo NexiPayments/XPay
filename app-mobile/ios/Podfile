@@ -2,5 +2,5 @@
 platform :ios, '9.0'
 use_frameworks!
 target 'XPay SDK Sample' do
-    pod 'Nexi_XPay'
+    pod 'Nexi_XPay-internal-testing', '1.4.3'
 end
